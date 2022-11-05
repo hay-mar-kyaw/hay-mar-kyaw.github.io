@@ -10,14 +10,18 @@
     <script>
         let number =prompt("Enter a number");
       
-        if((number%2)==0)
+        if(((number%2)==0)&&(number!=""))
         {
             alert("It is an Even Number");
         }
-        else if((number%2)!=0)
+        else if(((number%2)!=0)&&(number!=""))
         {
             alert("It is an Odd Number");
         }
+        else{
+            alert("Its not a number!");
+        }
+        
            
     </script>
     
