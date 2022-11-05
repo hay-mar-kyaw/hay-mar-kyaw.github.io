@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Array</h1>
+    <script>
+        //Array
+        let studentList=['Mg Mg','Kyaw Kyaw','Aung Aung'];
+        console.log(studentList);
+
+        //Add data to Array /insert from end room
+        studentList.push('Aye Aye');
+        console.log(studentList);
+
+        //Add data to Array / insert from start room
+        studentList.unshift('Hla Hla');
+        console.log(studentList);
+
+        //
+        studentList.pop();
+        console.log(studentList);
+        //
+        studentList.shift();
+        console.log(studentList);
+        //Sorting A-Z
+        studentList.sort();
+        console.log(studentList);
+        //Reverse sorting
+        studentList.reverse();
+        console.log(studentList);
+
+        //Convert Array to String
+        let studentListStr=studentList.toString();
+        console.log(studentListStr);
+        //Convert String to Array
+        let studentListArray=studentListStr.split(',');
+        console.log(studentListArray);
+        console.log(studentListArray.length);
+
+        let studentList2=['Ma Ma','Hla Hla'];
+        let studentList3=['Mya Mya','Tun Tun'];
+        let result = studentList.concat(studentList2);
+        console.log(result);
+
+        let multiArray1=result.concat(studentList3);
+        console.log(multiArray1);
+        let multiArray=[...studentList,...studentList2,...studentList3];
+        console.log(multiArray);
+
+        //object
+        //roll,name,email,major,phone,address,age
+        let student1={
+            roll:1,
+            name:'Ahe Htoo Naw',
+            email:'ahehtoonaw@gmail.com',
+            major:'High School',
+            phone: 09979769879,
+            age:18,
+            address:'Mandalay'
+        }
+        let student2={
+            roll:2,
+            name:'Aung Myat Thu',
+            email:'aungmyatthu@gmail.com',
+            major:'IT',
+            phone: 09979764879,
+            age:23,
+            address:'Yangon'
+        }
+
+        let student3={
+            roll:3,
+            name:'Ei Chan',
+            email:'eichan@gmail.com',
+            major:'IT',
+            phone: 09979764812,
+            age:25,
+            address:'Singapore'
+        }
+
+        let studentListArr=[student1,student2];
+        studentListArr.push(student3);
+        console.log(studentListArr);
+
+
+    </script>
+    
+</body>
+</html>

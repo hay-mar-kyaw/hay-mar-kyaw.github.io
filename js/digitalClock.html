@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Digital Clock</h1>
+    <div class="container">
+        <div id="hour">00</div>
+        <div class="dot">:</div>
+        <div id="minute">00</div>
+        <div class="dot">:</div>
+        <div id="second">00</div>
+        <div id="timeline">AM</div>
+
+    </div>
+    
+    <script>
+        function timeInterval(){
+        let todayDate = new Date();
+        let todayHour= todayDate.getHours();
+        let todayMinute=todayDate.getMinutes();
+        let todaySecond=todayDate.getSeconds();
+        
+        if(todayHour>=12)
+        {
+            document.getElementById('timeline').innerHTML="PM";
+        }
+        if(todayHour>12)
+        {
+            todayHour=todayHour-12;
+            document.getElementById('hour').innerHTML=todayHour;
+        }
+       document.getElementById('minute').innerHTML=todayMinute;
+       document.getElementById('second').innerHTML=todaySecond;
+              
+        }
+        setInterval(timeInterval,1000);
+       </script>
+</body>
+</html>
