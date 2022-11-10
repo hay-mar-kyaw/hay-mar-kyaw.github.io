@@ -14,7 +14,7 @@
 
      </tbody>
     </table>
-    <button onclick="showDataSeries()">Show Data</button>
+    <button onclick="show()">Show Data</button>
     <script>
         function show(){
             //alert("Ok");
@@ -22,7 +22,7 @@
             html=html+`<tr>`;
             for(let i=1; i<=10; i++)
             {
-                html=html+`<td>${i}</td>`
+                html=html+`<td>${i}</td>`;
             }
             html=html+`</tr>`;
             document.getElementById('myData').innerHTML=html;

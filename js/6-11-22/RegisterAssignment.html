@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Assignment</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+    <h1>Register Assignment</h1>
+    <div class="reg_container">
+    <div class="myForm">
+    <form action="" name="myData">
+       <label class="lbl1"> Date:</label><input type="date" name="date" class="input1"><br>
+        <label class=lbl2>Amount:</label><input type="number" name="amount" class="input2"><br>
+        <button type="button" onclick="addData()" class="button">Add</button>
+    </form>
+</div>
+<div class="table">
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Total</th>
+            </tr>
+           
+        </thead>
+        <tbody id="body">
+           
+        </tbody>
+        
+    </table>
+</div>
+</div>
+    <script>
+        let dataList=[];
+        function addData(){
+            let date=document.myData.date.value;
+            let amount=document.myData.amount.value;
+            let dataObj={
+                addDate:date,
+                addAmount:amount
+            }
+            dataList.push(dataObj);
+            let insertData='';
+            let total=0;
+            console.log(typeof(total));
+            for(let i=0; i<dataList.length; i++)
+            {
+                let insertDataString=dataList[i];
+                
+                
+                insertData=insertData+`
+                                        <tr>
+                                            <td>${i+1}</td>
+                                            <td>${insertDataString.addDate}</td>
+                                            <td>${insertDataString.addAmount}</td>
+                                            <td>${insertDataString.addAmount}</td>
+                                        </tr>
+                                         `;
+                                         total=total+ +`${insertDataString.addAmount}`;
+                                       //  console.log(insertData); 
+                                       
+                                                                                
+            }
+           
+            insertData=insertData+`<tr>
+                                        <td colspan=3>Grand Total</td>
+                                        <td>${total}</td>
+                                    </tr>`;    
+            document.getElementById('body').innerHTML=insertData;
+        }
+    </script>
+</body>
+</html>

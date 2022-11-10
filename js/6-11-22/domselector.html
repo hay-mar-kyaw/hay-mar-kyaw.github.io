@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Selector</title>
+</head>
+<!--body=document-->
+<body>
+    <h1 id="heading">DOM selector</h1>
+    <P id="myId">Id <i>Selector</i></P>
+    <p class="myClass">Class 1 Selector</p><!-- Class - Array type-->
+    <p class="myClass">Class 2 Selector</p>
+    <p class="myClass">Class 3 Selector</p>
+    <p>Tag Selector</p>
+    <p>Query Selector</p>
+    <button onclick="show()">Click Me</button>
+
+    <script>
+        function show(){
+            //alert("Ok");
+            // id selector
+            let myId=document.getElementById('myId');
+            console.log(myId.innerHTML);
+            console.log(myId.innerText);
+
+            //class selector
+            let w=document.getElementsByClassName('myClass');
+            console.log(w[1]);
+            console.log(w[1].innerHTML);
+            console.log(w[2].innerText);
+
+            //tag selector
+            let myTagName=document.getElementsByTagName('p');
+            console.log(myTagName[4].innerHTML);
+            console.log(myTagName[4].innerText);
+
+            // query selector
+            let myQuerySelector=document.querySelector('#myId');
+            console.log(myQuerySelector);
+
+            let myQuerySelectorClass=document.querySelector('.myClass');
+            console.log(myQuerySelectorClass);
+
+            let querySelectorTag=document.querySelectorAll('p');
+            console.log(querySelectorTag);
+
+            let querySelectorTagAll=document.querySelectorAll('.myClass');
+            console.log(querySelectorTagAll);
+
+            //Update
+            let header=document.getElementById('heading');
+           // header.innerText="Dom Selector Lessons <i>Update</i>";
+            header.innerHTML="Dom Selector Lessons <i>Update</i>";
+        }
+    </script>
+</body>
+</html>

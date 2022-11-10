@@ -42,4 +42,49 @@ h1{
     margin-left:10px;
     justify-content: center;
 }
+
+/* Register Assignment */
+body{
+    background-color: antiquewhite;
+}
+.reg_container{
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+.myForm{
+    width:200px;
+    height: 300px;
+   background-color: darkolivegreen;
+   
+}
+.input1{
+    margin-left: 50px;
+    padding: 10px;
+    width: 100px;
+    height:5px;
+    margin-bottom: 20px;
+}
+.input2{
+    margin-left: 25px ;
+    height:30px;
+    border: none;
+}
+.lbl1,.lbl2{
+    font-size: 20px;
+    color:white;
+}
+.button{
+    text-align: center;
+    width:100px;
+    padding:5px;
+    border-radius: 10px;
+    border:none;
+    font-size: 15px;
+    margin-top:30px;
+  justify-items: center;
+}
+.button:hover{
+    background-color: darkgreen;
+}
   
