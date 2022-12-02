@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Indicators</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="text-center text-danger my-5">Carousel Assignment 1</h1>
+    <div class="carousel slide" data-bs-ride="carousel" id="Carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/pexels-johannes-plenio-1437601.jpg" class="img-fluid w-100" style=height:600px; alt="" srcset="">
+            </div>
+            <div class="carousel-item">
+                <img src="images/pexels-johannes-plenio-2080960.jpg" class="img-fluid  w-100" style=height:600px; alt="" srcset="">
+            </div>
+            <div class="carousel-item">
+                <img src="images/pexels-quang-nguyen-vinh-2563129.jpg" class="img-fluid w-100" style=height:600px; alt="" srcset="">
+            </div>
+        </div>
+        <a href="#Carousel" class="carousel-control-prev" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#Carousel" class="carousel-control-next" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <div class="carousel-indicators">
+            <button data-bs-target="#Carousel" data-bs-slide-to="0" class="active"></button>
+            <button data-bs-target="#Carousel" data-bs-slide-to="1"></button>
+            <button data-bs-target="#Carousel" data-bs-slide-to="2"> </button>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
