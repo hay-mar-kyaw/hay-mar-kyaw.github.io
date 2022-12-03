@@ -5,31 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal</title>
-    <link rel="stylesheet" href="bootstrap/bootstrap/css/bootstrap-grid.rtl.min.css">
-    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Modal</h1>
+    <h1 class="text-center text-danger my-5">Modal</h1>
     <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
             <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="" alt="" srcset="" class="card-img-top">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ex quam. Praesentium, earum. A doloribus assumenda reprehenderit est voluptate velit ratione soluta porro tempora tenetur. Nisi expedita libero ipsum rerum.</p>
-                        <button class="btn btn-primary" data-bs-target="#MyModal" data-bs-toggle="modal">read more</button>
-                    </div>
-
+                <div class="card p-3">
+                    <img src="images/undraw_engineering_team_a7n2.svg" class="card-img-top" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus accusantium repellendus quasi dolore pariatur nesciunt odio maiores rem. Laudantium, adipisci inventore aspernatur natus cumque labore nemo consequatur eum at omnis.</p>
+                    <button class="btn btn-primary w-50 ms-auto" data-bs-target="#MyModal" data-bs-toggle="modal">read More</button>
                 </div>
             </div>
         </div>
     </div>
-    <script src="bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+
+    <div class="modal fade" id="MyModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Item Detail</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="images/undraw_engineering_team_a7n2.svg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-6">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla debitis natus, vero aliquam officia ut blanditiis inventore fugit assumenda cum ipsam tempora tempore nam velit itaque accusamus suscipit voluptas in!</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-success position-relative">
+      Mail  <span class="badge position-absolute bg-danger translate-middle text-light top-0 start-100 rounded-pill">14+</span>
+    </button>
+
+    <button class="btn btn-primary position-relative mx-5">
+        Inbox <span class="badge position-absolute top-0 start-100 bg-danger rounded-pill translate-middle">99</span>
+    </button>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-<div class="modal fade" id="MyModal">
-    <div class="modal-dialog">
-        <div ></div>
-    </div>
-</div>
