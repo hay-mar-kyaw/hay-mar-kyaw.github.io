@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Function</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="big()">
+    <h1>Event Function</h1>
+    <img src="../Sunflower Oil Store/images/bg.jpg" alt="" width="300px" height="300px" id='myImage' onmouseover="big()" onmouseout="normal()">
+    <br><br>
+    <!--<input type="text" id="myInput" onchange="change()">-->
+    //<input type="text" id="myInput" onkeydown="change()">
+    <p id="myText"></p>
+    <script>
+        function big(){
+            document.getElementById('myImage').style.width='500px';
+            document.getElementById('myImage').style.height='500px';
+        }
+        function normal(){
+            document.getElementById('myImage').style.width='300px';
+            document.getElementById('myImage').style.height='300px';
+        }
+        function change(){
+            let result=document.getElementById('myInput').value;
+            document.getElementById('myText').innerHTML=result;
+        }
+    </script>
+</body>
+</html>

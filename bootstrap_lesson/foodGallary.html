@@ -21,6 +21,11 @@
                     <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
                 </ul>
             </div>
+            <div>
+                <button class="btn btn-primary position-relative">
+                    Inbox<span class="badge translate-middle position-absolute top-0 start=100 bg-danger rounded-pill">12</span>
+                </button>
+            </div>
         </div>
 
     </nav>
@@ -38,7 +43,7 @@
             </div>
         </div>
     </div>
-    <div class="container bg-white">
+    <div class="container bg-light">
     <div class="container my-5">
         <h1 class="text-center my-5">Popular Foods</h1>
         <div class="row">
@@ -47,7 +52,7 @@
                     <img src="images/burmese-food-1.webp" class="card-img-top" alt="">
                     <h3>Food One</h3>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content</p>
-                    <button class="btn btn-outline-danger">Detail</button>
+                    <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#Mymodal">Detail</button>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -55,7 +60,7 @@
                     <img src="images/2.jpg" class="card-img-top" alt="">
                     <h3>Food Two</h3>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content</p>
-                    <button class="btn btn-outline-danger">Detail</button>
+                    <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#Mymodal">Detail</button>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -63,7 +68,7 @@
                     <img src="images/6.jpg" class="card-img-top" alt="">
                     <h3>Food Three</h3>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content</p>
-                    <button class="btn btn-outline-danger">Detail</button>
+                    <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#Mymodal">Detail</button>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -71,7 +76,7 @@
                     <img src="images/5.jpg" class="card-img-top" alt="">
                     <h3>Food Four</h3>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content</p>
-                    <button class="btn btn-outline-danger">Detail</button>
+                    <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#Mymodal">Detail</button>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-4">
@@ -79,7 +84,7 @@
                     <img src="images/15.jpg" class="card-img-top" alt="">
                     <h3>Food Five</h3>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content</p>
-                    <button class="btn btn-outline-danger">Detail</button>
+                    <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#Mymodal">Detail</button>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-4">
@@ -87,7 +92,7 @@
                     <img src="images/13.jpg" class="card-img-top" alt="">
                     <h3>Food Six</h3>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content</p>
-                    <button class="btn btn-outline-danger">Detail</button>
+                    <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#Mymodal">Detail</button>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-4">
@@ -95,7 +100,7 @@
                     <img src="images/12.webp" class="card-img-top" alt="">
                     <h3>Food Seven</h3>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content</p>
-                    <button class="btn btn-outline-danger">Detail</button>
+                    <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#Mymodal">Detail</button>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3  my-4">
@@ -103,7 +108,7 @@
                     <img src="images/17.png" class="card-img-top" alt="">
                     <h3>Food Eight</h3>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content</p>
-                    <button class="btn btn-outline-danger">Detail</button>
+                    <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#Mymodal">Detail</button>
                 </div>
             </div>
 
@@ -188,6 +193,38 @@
     </div>
 </div>
 </footer>
+<!-- Modal -->
+<div class="modal" id="Mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Food One</h2>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <img src="images/burmese-food-1.webp" class="img-fluid" alt="">
+                        </div>
+                        <div class="col">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam sunt incidunt doloribus non beatae blanditiis? Eveniet maxime distinctio facilis voluptatum necessitatibus. Porro aliquam mollitia illo ducimus eveniet voluptates pariatur.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!--End-->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

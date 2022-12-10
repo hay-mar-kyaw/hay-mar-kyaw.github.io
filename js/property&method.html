@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property and method</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Property and Method</h1>
+    <h2 id="createTextNode"></h2>
+    <button type="button" onclick="createElementTag()" >Create Text Node</button>
+    <br><br>
+    <p id="set_attribute">This is set Attribute</p>
+    <a class="attribute">Click here</a>
+    <button onclick="set_attribute()">Set Attribute</button>
+
+    <br><br>
+    <p id="get_attribute" style='background-color: brown'>This is get attribute</p>
+    <button onclick="get_attribute()">Get Attribute</button>
+
+    <br><br>
+    <p id="remove_attribute" style="color:brown">Remove Attribute</p>
+    <button onclick="remove_attribute()">Change Color</button>
+
+    <script>
+        function createText()
+        {
+            //alert("OK");
+            let createTextNodeValue=document.createTextNode("This is Text Node");
+            //console.log(createTextNodeValue);
+           // let createTextNodeSelector=document.getElementById('createTextNode');
+           // createTextNodeSelector.appendChild(createTextNodeValue);
+            document.getElementById('createTextNode').appendChild(createTextNodeValue);
+        }
+        function createElementTag(){
+            let h3=document.createElement('h3');
+            //console.log(h3);
+            h3.innerHTML="This is create Element";
+            document.body.appendChild(h3);
+
+        }
+        function set_attribute(){
+            //alert('OK');
+            let setAttributeSelector=document.querySelector('#set_attribute');
+            console.log(setAttributeSelector);
+            setAttributeSelector.setAttribute('style','color:green');
+            let attributeSelector=document.querySelector('.attribute');
+            attributeSelector.setAttribute('href','www.google.com');
+        }
+
+        function get_attribute(){
+            let getAttributeSelector=document.getElementById('get_attribute');
+            console.log(getAttributeSelector.getAttribute('style'));
+        }
+
+        function remove_attribute(){
+            //alert('OK');
+            let removeAttributeSelector=document.getElementById('remove_attribute');
+           let res= removeAttributeSelector.getAttribute('style');
+            if(res=='color:brown'){
+                removeAttributeSelector.setAttribute('style','color:green');
+            }
+            else{
+                removeAttributeSelector.setAttribute('style','color:brown');
+            }
+
+        }
+    </script>
+</body>
+</html>

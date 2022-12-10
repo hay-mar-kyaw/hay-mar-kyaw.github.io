@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .trip{
+            max-width: 200px;
+            background-color: green;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>I want to go trip</p>
+    <button id="add_class">Add Class</button>
+    <button id="remove_class">Remove Class</button>
+
+
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#add_class').click(function (e) { 
+                e.preventDefault();
+                $('p').addClass('trip');
+                
+            });
+            $('#remove_class').click(function (e) { 
+                e.preventDefault();
+                $('p').removeClass('trip');
+                
+            });
+        });
+    </script>
+</body>
+</html>

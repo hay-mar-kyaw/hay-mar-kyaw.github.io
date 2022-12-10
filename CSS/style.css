@@ -1,0 +1,139 @@
+h1{
+   /* color:red;*/
+   /* color:#fffeee;      - Hexa Color format */
+    color:rgb(0, 255, 26);     /*rgb format */
+    text-align: center;
+    font-size: 25px;
+}
+/* Universal Selector 
+*{
+    color:peru;
+}*/
+/* tag /element selector */
+small{
+    color: red;
+}
+ /* attribut selector*/
+    a[title="google"]{
+        color:yellow;
+    }
+    /* Id selector */
+    #idselector{
+        text-indent: 50px;
+        line-height: 20px;
+    }
+    /* class selector */
+    div.classselector{
+        font-style: italic;
+        color: red;
+    }
+    /* desc selector */
+    .descselector a{
+        color:red;
+    }
+    /*child selector */
+    #child > a{
+        text-shadow: 25px;
+        color:green;
+    }
+/* Layout */
+    .inline{
+        border :1px solid red;
+        width:400px;
+        display:block;
+    }
+    
+    .block{
+        border :1px solid black;
+        width:400px;
+        
+    }
+    .float_left img{
+        width:50%;
+        height: 600px;;
+        float:left;
+        border-radius: 5px;
+    }
+    .clear{
+        clear:both;
+    }
+    .float_right img{
+        width:40%;
+        height: 600px;
+        float:right;
+        border-radius: 10px;
+
+    }
+    /* Grid Lessons */
+    .gridone div, .gridtwo div,.gridthree div,.gridfour div{
+        padding: 20px;
+        color:white;
+        text-align: center;
+
+    }
+    .gridone,.gridtwo,.gridthree,.gridfour{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+    }
+
+    /* Grid Column */
+    .gridtwo{
+        
+        /*grid-column-gap: 40px;
+        grid-row-gap: 40px;*/
+        gap:40px;
+        margin: 20px;
+
+    }
+    .columnadd{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .rowadd{
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .relative_parent{
+        border: 1px solid red;
+        width : 1000px;
+        height:400px;
+    }
+    .relative{
+        border:1px solid black;
+        width:400px;
+        height:200px;
+        position:relative;
+        top:50px;
+        left:100px;
+    }
+    .absolute_parent{
+        border: 1px solid red;
+        width : 1000px;
+        height:400px;
+    }
+    .absolute{
+        border:1px solid black;
+        width:400px;
+        height:200px;
+        position:absolute;
+        top:50px;
+        left:100px;
+    }
+    .fixed{
+        position:fixed;
+        top:50px;
+
+    }
+/* Online font */
+    .online{
+        font-family: 'Dancing Script', cursive;
+    }
+    /*Offline font*/
+    @font-face{
+        src: url(Indie_Flower/IndieFlower-Regular.ttf);
+        font-family: indie;
+    }
+    .offline{
+        font-family: indie;
+    }

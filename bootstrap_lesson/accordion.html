@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="text-center text-danger my-5">Accordion Lesson</h1>
+    <div class="accordion m-5" id="parent">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#page1" >Page1</button>
+            </h2>
+        <div class="collapse accordion-collapse show" id="page1" data-bs-parent="#parent">    
+            <div class="accordion-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ut exercitationem nostrum illo laboriosam, in id nesciunt cum dolore veritatis vel. Ut id, maiores odio quasi eos totam error beatae!</p>
+            </div>
+        </div>  
+        </div>
+        <div class="accordion-item">  
+        <h2 class="accordion-header">
+            <button class="accordion-button"data-bs-toggle="collapse" data-bs-target="#page2" >Page2</button>
+        </h2>
+     <div class="collapse accordion-collapse" id="page2" data-bs-parent="#parent">
+            <div class="accordion-body">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quia voluptate omnis iusto corrupti suscipit, libero hic alias non! Pariatur accusantium repellendus ullam laboriosam animi culpa deserunt et esse praesentium?</p>
+        </div>
+    </div>
+    </div>  
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#page3">Page3</button>
+    </h2>
+    <div class="collapse accordion-collapse" id="page3" data-bs-parent="#parent">
+        <div class="accordion-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolor totam voluptatibus ea autem at saepe, voluptates perferendis eum ex soluta tenetur! Explicabo, ratione obcaecati eius saepe dolorem sed qui?</p>
+        </div>
+    </div>
+        </div>
+    </div>
+    
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
