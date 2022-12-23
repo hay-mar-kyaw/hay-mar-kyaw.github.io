@@ -21,7 +21,13 @@
                     <li class="nav-item"><a href="" class="nav-link">Shop</a></li>
                     <li class="nav-item"><a href="" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="" class="nav-link"><i class="fa-solid fa-cart-shopping position-relative"><span class="badge position-absolute top-0 start-100 translate-middle rounded-pill bg-danger text-white">0</span></i></a></li>
+                    <li class="nav-item">
+                        <a href="addCart.html" class="btn btn-primary position-relative" id="addCart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="count_number">
+                            </span>
+                        </a>
+                    </li> 
                 </ul>
                
             </div>
@@ -33,9 +39,25 @@
             <div class="col">
                 <div class="card p-3 shadow">
                     <img src="images/BestSeller1.webp" alt="" class="card-img-top">
-                    <p class="text-center">Yoga 6 Gen 7 (13, AMD)</p>
+                    <p class="text-center">Laptop 1</p>
                     <p class="text-center">$600</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="1" data-name="Laptop 1" data-price="600"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-3 shadow">
+                    <img src="images/BestSeller1.webp" alt="" class="card-img-top">
+                    <p class="text-center">Yoga 6 Gen 7 (13, AMD)</p>
+                    <p class="text-center">$650</p>
+                    <button class="btn btn-primary addToCart" data-id="2" data-name="Laptop 2" data-price="650"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-3 shadow">
+                    <img src="images/BestSeller1.webp" alt="" class="card-img-top">
+                    <p class="text-center">Yoga 6 Gen 7 (13, AMD)</p>
+                    <p class="text-center">$650</p>
+                    <button class="btn btn-primary addToCart" data-id="3" data-name="Laptop 3" data-price="650"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
             <div class="col">
@@ -43,7 +65,7 @@
                     <img src="images/BestSeller1.webp" alt="" class="card-img-top">
                     <p class="text-center">Yoga 6 Gen 7 (13, AMD)</p>
                     <p class="text-center">$600</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="3" data-name="Laptop 3" data-price="650"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
             <div class="col">
@@ -51,23 +73,7 @@
                     <img src="images/BestSeller1.webp" alt="" class="card-img-top">
                     <p class="text-center">Yoga 6 Gen 7 (13, AMD)</p>
                     <p class="text-center">$600</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card p-3 shadow">
-                    <img src="images/BestSeller1.webp" alt="" class="card-img-top">
-                    <p class="text-center">Yoga 6 Gen 7 (13, AMD)</p>
-                    <p class="text-center">$600</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card p-3 shadow">
-                    <img src="images/BestSeller1.webp" alt="" class="card-img-top">
-                    <p class="text-center">Yoga 6 Gen 7 (13, AMD)</p>
-                    <p class="text-center">$600</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="4" data-name="Laptop 4" data-price="600"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
            
@@ -82,7 +88,7 @@
                     <img src="images/Personaluse1.webp" alt="" class="card-img-top">
                     <p class="text-center">IdeaPad Slim 5i 12th Gen (15, Intel)</p>
                     <p class="text-center">$400</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="5" data-name="Laptop 5" data-price="400"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
             <div class="col">
@@ -90,7 +96,7 @@
                     <img src="images/Personaluse1.webp" alt="" class="card-img-top">
                     <p class="text-center">IdeaPad Slim 5i 12th Gen (15, Intel)</p>
                     <p class="text-center">$400</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="6" data-name="Laptop 6" data-price="400"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
             <div class="col">
@@ -98,7 +104,7 @@
                     <img src="images/Personaluse1.webp" alt="" class="card-img-top">
                     <p class="text-center">IdeaPad Slim 5i 12th Gen (15, Intel)</p>
                     <p class="text-center">$400</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="7" data-name="Laptop 7" data-price="400"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
             <div class="col">
@@ -106,7 +112,7 @@
                     <img src="images/Personaluse1.webp" alt="" class="card-img-top">
                     <p class="text-center">IdeaPad Slim 5i 12th Gen (15, Intel)</p>
                     <p class="text-center">$400</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="8" data-name="Laptop 8" data-price="400"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
             <div class="col">
@@ -114,7 +120,7 @@
                     <img src="images/Personaluse1.webp" alt="" class="card-img-top">
                     <p class="text-center">IdeaPad Slim 5i 12th Gen (15, Intel)</p>
                     <p class="text-center">$400</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="9" data-name="Laptop 9" data-price="400"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
 
@@ -128,7 +134,7 @@
                     <img src="images/Business1..webp" alt="" class="card-img-top">
                     <p class="text-center">Thinkpad E14 11th Gen (Intel)</p>
                     <p class="text-center">$500</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="10" data-name="Laptop 10" data-price="500"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
             <div class="col">
@@ -136,7 +142,7 @@
                     <img src="images/Business1..webp" alt="" class="card-img-top">
                     <p class="text-center">Thinkpad E14 11th Gen (Intel)</p>
                     <p class="text-center">$500</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="11" data-name="Laptop 11" data-price="500"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
             <div class="col">
@@ -144,7 +150,7 @@
                     <img src="images/Business1..webp" alt="" class="card-img-top">
                     <p class="text-center">Thinkpad E14 11th Gen (Intel)</p>
                     <p class="text-center">$500</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="12" data-name="Laptop 12" data-price="500"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
             <div class="col">
@@ -152,7 +158,7 @@
                     <img src="images/Business1..webp" alt="" class="card-img-top">
                     <p class="text-center">Thinkpad E14 11th Gen (Intel)</p>
                     <p class="text-center">$500</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="13" data-name="Laptop 13" data-price="500"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
             <div class="col">
@@ -160,7 +166,7 @@
                     <img src="images/Business1..webp" alt="" class="card-img-top">
                     <p class="text-center">Thinkpad E14 11th Gen (Intel)</p>
                     <p class="text-center">$500</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="14" data-name="Laptop 14" data-price="500"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
             
@@ -175,7 +181,7 @@
                     <img src="images/Gaming1.webp" alt="" class="card-img-top">
                     <p class="text-center"> IdeaPad Gaming 3i Gen 7 (15, Intel)</p>
                     <p class="text-center">$700</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="15" data-name="Laptop 15" data-price="700"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
             <div class="col">
@@ -183,7 +189,7 @@
                     <img src="images/Gaming1.webp" alt="" class="card-img-top">
                     <p class="text-center"> IdeaPad Gaming 3i Gen 7 (15, Intel)</p>
                     <p class="text-center">$700</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="16" data-name="Laptop 16" data-price="700"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
             <div class="col">
@@ -191,7 +197,7 @@
                     <img src="images/Gaming1.webp" alt="" class="card-img-top">
                     <p class="text-center"> IdeaPad Gaming 3i Gen 7 (15, Intel)</p>
                     <p class="text-center">$700</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="17" data-name="Laptop 17" data-price="700"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
             <div class="col">
@@ -199,7 +205,7 @@
                     <img src="images/Gaming1.webp" alt="" class="card-img-top">
                     <p class="text-center"> IdeaPad Gaming 3i Gen 7 (15, Intel)</p>
                     <p class="text-center">$700</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="18" data-name="Laptop 18" data-price="700"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
             <div class="col">
@@ -207,7 +213,7 @@
                     <img src="images/Gaming1.webp" alt="" class="card-img-top">
                     <p class="text-center"> IdeaPad Gaming 3i Gen 7 (15, Intel)</p>
                     <p class="text-center">$700</p>
-                    <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    <button class="btn btn-primary addToCart" data-id="19" data-name="Laptop 19" data-price="700"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
                 </div>
             </div>
             
@@ -230,5 +236,56 @@
     <script src="fontawesome/js/all.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="jquery.min.js"></script>
+    <script src="count.js"></script>
+    <script>
+        $(document).ready(function () {
+            count();
+            
+            $('.addToCart').click(function (e) { 
+                e.preventDefault();
+                
+                let id=$(this).data('id');
+                let name=$(this).data('name');
+                let price=$(this).data('price');
+                console.log(id,name,price);
+                
+                let items={
+                    item_id:id,
+                    item_name:name,
+                    item_price:price,
+                    qty:1, //for count
+                };
+
+                let itemString=localStorage.getItem('shops');
+                let itemArray;
+                if(itemString==null){
+                    itemArray=[];
+                }else{
+                    itemArray=JSON.parse(itemString);
+                }
+
+                let status=false;
+                $.each(itemArray,function(i,v){
+                    if(id==v.item_id){
+                        status=true;
+                        v.qty++;
+                    }
+                })
+                if(status==false){
+                    itemArray.push(items);
+                }
+              
+                let itemData=JSON.stringify(itemArray);
+                localStorage.setItem('shops',itemData);
+                count();
+            
+            });
+
+            
+            
+
+         
+        });
+    </script>
 </body>
 </html>

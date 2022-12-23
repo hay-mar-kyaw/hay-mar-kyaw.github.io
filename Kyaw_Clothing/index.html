@@ -5,41 +5,521 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyaw Clothing</title>
+    <link rel="icon" href="images/logo2.png">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/fontawesome-free-6.2.1-web/css/all.min.css">
 </head>
 <body>
 <!--nav bar start-->
-    <nav class="navbar navbar-expand-lg shadow">
+<div class="sticky-top">
+    <nav class="bg-danger">
         <div class="container">
-            <img src="images/logo-withoutbg.png" alt="" style="height:100px ;width:200px;">
+            <div class="row text-white">
+                <div class="col-6">
+                    <small>
+                        <span class="d-none d-md-inline d-inline-block"><i class="fa-solid fa-envelope"></i>&nbsp;contact@kyawfashion.com</span>
+                        <span class="ps-3"><i class="fa-solid fa-phone-volume"></i>+959964033115</span>
+                    </small>
+                </div >
+                <div class="col-6 text-end">
+                    <small>
+                        Follow Us &nbsp;
+                    <a href="" class="text-white ps-2"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" class="text-white ps-2"><i class="fa-brands fa-viber"></i></a>
+                    <a href="" class="text-white ps-2"><i class="fa-brands fa-instagram"></i></a>
+                </small>
+                </div>
+
+            </div>
+        </div>  
+            <nav class=" navbar navbar-expand-md bg-white shadow navbar-light bg-light">
+            <div class="container">
+                <img src="images/logo2.png" alt="" style="height: 80px;width: 150px;">
             <div>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Mycollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="Mycollapse">
-                <ul class="navbar-nav ">
-                    <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Product</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Promotion</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Login</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Register</a></li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Product</a>
+                            <ul class="dropdown-menu" id="">
+                                <li><a href="menFashion.html" class="dropdown-item">Men</a></li>
+                                <li><a href="womenFashion.html" class="dropdown-item">Women</a></li>
+                                <li><a href="kidsFashion.html" class="dropdown-item">Kids</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item"><a href="promotion.html" class="nav-link">Promotion</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                    <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
+                    <li class="nav-item">
+                        <a href="checkout.html" class="btn btn-primary position-relative" id="addCart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="count_number">
+                            </span>
+                        </a>
+                    </li> 
                 </ul>
             </div>
         </div>
     </nav>
-
+    </nav>
+</div>    
 <!--nav bar end-->
+<!--start banner-->
+<div class="carousel slide carousel-fade" data-bs-ride="carosel" id="Carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/slider1.jpg" alt="" class="img-fluid w-100">
+            <div class="carousel-text d-none d-md-block">
+                <h3>Welcome to our Kyaw Fashion</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Expedita accusantium, harum error earum consequatur, nostrum <br>vero provident accusamus dolore molestias velit quaerat neque totam <br>rerum, nobis commodi esse voluptatum ex!</p>
+                <button class="btn btn-danger">Shop Now</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/slider2.jpg" alt="" class="img-fluid w-100">
+            <div class="carousel-text d-none d-md-block">
+                <h3>Welcome to our Kyaw Fashion</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Expedita accusantium, harum error earum consequatur, nostrum <br>vero provident accusamus dolore molestias velit quaerat neque totam <br>rerum, nobis commodi esse voluptatum ex!</p>
+                <button class="btn btn-danger">Shop Now</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/slider3.jpg" alt="" class="img-fluid w-100">
+            <div class="carousel-text d-none d-md-block">
+                <h3>Welcome to our Kyaw Fashion</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Expedita accusantium, harum error earum consequatur, nostrum <br>vero provident accusamus dolore molestias velit quaerat neque totam <br>rerum, nobis commodi esse voluptatum ex!</p>
+                <button class="btn btn-danger">Shop Now</button>
+            </div>
+        </div>
+       <button class="carousel-control-prev" data-bs-target="#Carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon">
+        </span>
+       </button> 
+       <button class="carousel-control-next" data-bs-target="#Carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+       </button>
+    </div>
+
+</div>
+<!--End Carousel-->
+<!--Start Service-->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6 col-lg-3 my-2">
+            <div class="card pt-3 pb-2">
+                <div class="row">
+                    <div class="col-4 col-md-3 text-center">
+                        <i class="fas fa-shipping-fast fa-2x pt-2"></i>
+                    </div>
+                    <div class="col-8 col-md-9">
+                        <h6>Fast & Shipping</h6>
+                        <p>For orders from $100</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6 col-lg-3 my-2">
+            <div class="card pt-3 pb-2">
+                <div class="row">
+                    <div class="col-4 col-md-3 text-center">
+                        <i class="fa-solid fa-headset fa-2x pt-2"></i>
+                        
+                    </div>
+                    <div class="col-8 col-md-9">
+                        <h6>Support 24/7</h6>
+                        <p>Call us anytime</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6 col-lg-3 my-2">
+            <div class="card pt-3 pb-2">
+                <div class="row">
+                    <div class="col-4 col-md-3 text-center">
+                        <i class="fa-solid fa-shield-alt fa-2x pt-2"></i>
+                    </div>
+                    <div class="col-8 col-md-9">
+                        <h6>100% Safety</h6>
+                        <p>Only secure payments</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6 col-lg-3 my-2">
+            <div class="card pt-3 pb-2">
+                <div class="row">
+                    <div class="col-4 col-md-3 text-center">
+                        <i class="fas fa-gift fa-2x pt-2"></i>
+                    </div>
+                    <div class="col-8 col-md-9">
+                        <h6>Gift Promotion</h6>
+                        <p>Discount up to 90%</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!--end service-->
+<!--Start Promotion-->
+<div class="container">
+    <h4>Promotion Items</h4>
+     <section class="customer-logos slider">
+        <div class="slide card text-center">
+            <img src="images/newarrival1.png">
+            <div class="promotion my-2">
+                <span class="badge text-bg-danger rounded d-block w-100">10000MMK</span>
+                <span class="badge text-bg-light text-danger text-decoration-line-through">15000MMK</span>
+            </div>
+            <h6>Gucci T-shirt</h6>
+        </div>
+        <div class="slide card text-center">
+            <img src="images/newarrival2.png">
+            <div class="promotion my-2">
+                <span class="badge text-bg-danger rounded d-block w-100">10000MMK</span>
+                <span class="badge text-bg-light text-danger text-decoration-line-through">15000MMK</span>
+            </div>
+            <h6>Gucci T-shirt</h6>
+        </div>
+        <div class="slide card text-center">
+            <img src="images/newarrival3.png">
+            <div class="promotion my-2">
+                <span class="badge text-bg-danger rounded d-block w-100">10000MMK</span>
+                <span class="badge text-bg-light text-danger text-decoration-line-through">15000MMK</span>
+            </div>
+            <h6>Gucci T-shirt</h6>
+        </div>
+        <div class="slide card text-center">
+            <img src="images/newarrival4.png">
+            <div class="promotion my-2">
+                <span class="badge text-bg-danger rounded d-block w-100">10000MMK</span>
+                <span class="badge text-bg-light text-danger text-decoration-line-through">15000MMK</span>
+            </div>
+            <h6>Gucci T-shirt</h6>
+        </div>
+        <div class="slide card text-center">
+            <img src="images/newarrival5.png">
+            <div class="promotion my-2">
+                <span class="badge text-bg-danger rounded d-block w-100">10000MMK</span>
+                <span class="badge text-bg-light text-danger text-decoration-line-through">15000MMK</span>
+            </div>
+            <h6>Gucci T-shirt</h6>
+        </div>
+        <div class="slide card text-center">
+            <img src="images/newarrival6.png">
+            <div class="promotion my-2">
+                <span class="badge text-bg-danger rounded d-block w-100">10000MMK</span>
+                <span class="badge text-bg-light text-danger text-decoration-line-through">15000MMK</span>
+            </div>
+            <h6>Gucci T-shirt</h6>
+        </div>
+        <div class="slide card text-center">
+            <img src="images/newarrival7.png">
+            <div class="promotion my-2">
+                <span class="badge text-bg-danger rounded d-block w-100">10000MMK</span>
+                <span class="badge text-bg-light text-danger text-decoration-line-through">15000MMK</span>
+            </div>
+            <h6>Gucci T-shirt</h6>
+        </div>
+       
+     </section>
+  </div>
+  <!--End promotion-->
+
+<!--Start New Arrival-->
+<div class="container my-5">
+    <h4>New Arrial</h4>
+    <hr class="divided pt-0 mt-0">
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+        <div class="col mb-5">
+          <div class="shadow-lg p-3 rounded">
+            <div class="new_arrival_image_hover">
+                <img src="images/newarrival1.png" alt="" class="img-fluid new_arrival_image">
+           
+            <div class="view_detail">
+                <a href="detail.html" class="btn btn-sm btn-danger">Detail</a>
+            </div>
+            </div>
+            <hr class="new_arrival_first_color"><hr class="new_arrival_second_color">
+            <p class="my-0 py-0">Gucci T-shirt</p>
+            <p>Men <span class="float-end">40000MMK</span></p>
+          </div>
+
+        </div>
+        <div class="col mb-5">
+            <div class="shadow-lg p-3 rounded">
+              <div class="new_arrival_image_hover">
+                  <img src="images/newarrival2.png" alt="" class="img-fluid new_arrival_image">
+             
+              <div class="view_detail">
+                <a href="detail1.html" class="btn btn-sm btn-danger">Detail</a>
+              </div>
+              </div>
+              <hr class="new_arrival_first_color"><hr class="new_arrival_second_color">
+              <p class="my-0 py-0">Gucci T-shirt</p>
+              <p>Men <span class="float-end">40000MMK</span></p>
+            </div>
+  
+          </div>
+          <div class="col mb-5">
+            <div class="shadow-lg p-3 rounded">
+              <div class="new_arrival_image_hover">
+                  <img src="images/newarrival3.png" alt="" class="img-fluid new_arrival_image">
+             
+              <div class="view_detail">
+                <a href="detail2.html" class="btn btn-sm btn-danger">Detail</a>
+              </div>
+              </div>
+              <hr class="new_arrival_first_color"><hr class="new_arrival_second_color">
+              <p class="my-0 py-0">Gucci T-shirt</p>
+              <p>Men <span class="float-end">40000MMK</span></p>
+            </div>
+  
+          </div>
+          <div class="col mb-5">
+            <div class="shadow-lg p-3 rounded">
+              <div class="new_arrival_image_hover">
+                  <img src="images/newarrival4.png" alt="" class="img-fluid new_arrival_image">
+             
+              <div class="view_detail">
+                <a href="detail3.html" class="btn btn-sm btn-danger">Detail</a>
+              </div>
+              </div>
+              <hr class="new_arrival_first_color"><hr class="new_arrival_second_color">
+              <p class="my-0 py-0">Gucci T-shirt</p>
+              <p>Men <span class="float-end">40000MMK</span></p>
+            </div>
+  
+          </div>
+          <div class="col mb-5">
+            <div class="shadow-lg p-3 rounded">
+              <div class="new_arrival_image_hover">
+                  <img src="images/newarrival5.png" alt="" class="img-fluid new_arrival_image">
+             
+              <div class="view_detail">
+                <a href="detail4.html" class="btn btn-sm btn-danger">Detail</a>
+              </div>
+              </div>
+              <hr class="new_arrival_first_color"><hr class="new_arrival_second_color">
+              <p class="my-0 py-0">Gucci T-shirt</p>
+              <p>Men <span class="float-end">40000MMK</span></p>
+            </div>
+  
+          </div>
+          <div class="col mb-5">
+            <div class="shadow-lg p-3 rounded">
+              <div class="new_arrival_image_hover">
+                  <img src="images/newarrival6.png" alt="" class="img-fluid new_arrival_image">
+             
+              <div class="view_detail">
+                <a href="detail5.html" class="btn btn-sm btn-danger">Detail</a>
+              </div>
+              </div>
+              <hr class="new_arrival_first_color"><hr class="new_arrival_second_color">
+              <p class="my-0 py-0">Gucci T-shirt</p>
+              <p>Men <span class="float-end">40000MMK</span></p>
+            </div>
+  
+          </div>
+          <div class="col mb-5">
+            <div class="shadow-lg p-3 rounded">
+              <div class="new_arrival_image_hover">
+                  <img src="images/newarrival7.png" alt="" class="img-fluid new_arrival_image">
+             
+              <div class="view_detail">
+                <a href="detail6.html" class="btn btn-sm btn-danger">Detail</a>
+              </div>
+              </div>
+              <hr class="new_arrival_first_color"><hr class="new_arrival_second_color">
+              <p class="my-0 py-0">Gucci T-shirt</p>
+              <p>Men <span class="float-end">40000MMK</span></p>
+            </div>
+  
+          </div>
+          <div class="col mb-5">
+            <div class="shadow-lg p-3 rounded">
+              <div class="new_arrival_image_hover">
+                  <img src="images/newarrival8.png" alt="" class="img-fluid new_arrival_image">
+             
+              <div class="view_detail">
+                <a href="detail7.html" class="btn btn-sm btn-danger">Detail</a>
+              </div>
+              </div>
+              <hr class="new_arrival_first_color"><hr class="new_arrival_second_color">
+              <p class="my-0 py-0">Gucci T-shirt</p>
+              <p>Men <span class="float-end">40000MMK</span></p>
+            </div>
+  
+          </div>
+    </div>
+</div>
+<!--End New Arrival-->
+<!--Start Subscribe-->
+<div class="container-fluid bg-light text-white my-5">
+    <div class="container">
+    <div class="row  pt-5 pb-md-4 pb-lg-0">
+        <div class="col-12 col-md-6 ">
+            <h3 class="text-danger">Subscribe to our channel</h3>
+            <p class="text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eveniet aliquam doloribus amet ducimus quaerat. Fugiat, ex consequuntur tenetur perferendis similique tempore excepturi sint, molestiae aspernatur commodi, saepe impedit voluptatibus!</p>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" aria-describedby="button-addon2">
+                <button class="btn btn-success" type="button" id="button-addon2">Subscribe</button>
+              </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <img src="images/logo2.png" class="img-fluid" alt="">
+
+        </div>
+    </div>
+</div>
+
+</div>
+<!--End Subscribe-->
+<!--News-->
+<div class="container">
+    <h4>Lasted News</h4>
+    <hr class="divided">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3 my-2">
+            <div class="card">
+                <div class="image_hover">
+                    <img src="images/newarrival1.png" alt="" class="card-img-top new_image">
+                </div>
+                <div class="p-3">
+                    <h4 class="text-danger py-0 my-0">Discuss with Other Partner</h4>
+                    <small class="text-secondary">By Admin on 28 September 2022</small>
+                    <p align="justify" class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fugiat tempore atque facere corporis, repellendus enim unde vitae </p>
+                    <a href ="" class="text-danger text-decoration-none">Read More</a>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3 my-2">
+            <div class="card">
+                <div class="image_hover">
+                    <img src="images/newarrival1.png" alt="" class="card-img-top new_image">
+                </div>
+                <div class="p-3">
+                    <h4 class="text-danger py-0 my-0">Discuss with Other Partner</h4>
+                    <small class="text-secondary">By Admin on 28 September 2022</small>
+                    <p align="justify" class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fugiat tempore atque facere corporis, repellendus enim unde vitae </p>
+                    <a href ="" class="text-danger text-decoration-none">Read More</a>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3 my-2">
+            <div class="card">
+                <div class="image_hover">
+                    <img src="images/newarrival1.png" alt="" class="card-img-top new_image">
+                </div>
+                <div class="p-3">
+                    <h4 class="text-danger py-0 my-0">Discuss with Other Partner</h4>
+                    <small class="text-secondary">By Admin on 28 September 2022</small>
+                    <p align="justify" class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fugiat tempore atque facere corporis, repellendus enim unde vitae </p>
+                    <a href ="" class="text-danger text-decoration-none">Read More</a>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3 my-2">
+            <div class="card">
+                <div class="image_hover">
+                    <img src="images/newarrival1.png" alt="" class="card-img-top new_image">
+                </div>
+                <div class="p-3">
+                    <h4 class="text-danger py-0 my-0">Discuss with Other Partner</h4>
+                    <small class="text-secondary">By Admin on 28 September 2022</small>
+                    <p align="justify" class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fugiat tempore atque facere corporis, repellendus enim unde vitae </p>
+                    <a href ="" class="text-danger text-decoration-none">Read More</a>
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+</div>
+<!--End News-->
+
+<!--Footer-->
+<footer class="bg-dark container-fluid">
+    <div class="container text_secondary py-3">
+        <div class="row pt-2">
+            <div class="col-12 col-md-4">
+                <h4>Kyaw Fashion</h4>
+                <p align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aspernatur corporis praesentium odio, illum necessitatibus quam id dignissimos libero blanditiis! Tenetur dolorem id praesentium animi nobis. Et maxime nisi eveniet.</p>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+                <a href="" class="nav-link ps-5 py-2">Home</a>
+                <a href="" class="nav-link ps-5 py-2">About</a>
+                <a href="" class="nav-link ps-5 py-2">Contact</a>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+                <a href="" class="nav-link ps-5 py-2">Product</a>
+                <a href="" class="nav-link ps-5 py-2">News</a>
+                <a href="" class="nav-link ps-5 py-2">Promotion</a>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <div class="col-11">
+                        Mandalay Division, Myingyan District, Myotha
+                    </div>
+                    <p class="py-1">
+                        <i class="fa-solid fa-phone pe-2"></i>+959964033115
+                    </p>
+                    <p class="py-1">
+                        <i class="fa-solid fa-envelope pe-2"></i>kyawzinaung01tech@gmail.com
+                    </p>
+                    <p>
+                        <i class="fa-brands fa-facebook fa-2x p-2"></i>
+                        <i class="fa-brands fa-square-instagram fa-2x p-2"></i>
+                        <i class="fa-brands fa-viber fa-2x p-2"></i>
+                    </p>
+                </div>
+                
+            </div>
+            <p class="text-center pt-3">Designed by @ Hay Mar Kyaw</p>
+
+        </div>
+
+    </div>
+
+</footer>
+<div>
+
+</div>
 
 
 
-
+    <script src="js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="fontawesome/fontawesome-free-6.2.1-web/js/all.min.js"></script>
-    
+    <script src="js/custom.js"></script>
+    <script src="js/slick.min.js_1.9.0/cdnjs/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/count.js"></script>
+    <script src="js/getdata.js"></script>
+   
 </body>
 </html>

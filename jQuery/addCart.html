@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT shop</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container">
+            <a href="" class="navbar-brand">IT SHOP</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MyNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>    
+            <div class="collapse navbar-collapse" id="MyNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="IT_shop.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Shop</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="addCart.html" class="btn btn-primary position-relative" id="addCart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="count_number">
+                            </span>
+                        </a>
+                    </li> 
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+    <div class="table-responsive m-5">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Item Name</th>
+                        <th>Item Price</th>
+                        <th>Qty</th>
+                        <th>Sub Total</th>
+                    </tr>
+                </thead>
+                <tbody id="dataItem">
+                </tbody>
+                <tfoot>
+                    <td colspan="4" class="text-black">Total</td>
+                    <td id="total">0</td>
+                </tfoot>
+            
+        </table>
+        <button class="btn btn-success">Order</button>
+    </div>
+    
+    <footer class="shadow">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="text-center">Copywrite@HayMarKyaw2022</p>
+                </div>
+
+            </div>
+
+        </div>
+      
+    </footer>
+    <script src="fontawesome/js/all.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="count.js"></script>
+    <script>
+        $(document).ready(function () {
+                     
+            getData();
+            count();
+            total();
+            $('.addToCart').click(function (e) { 
+                e.preventDefault();
+                
+                let id=$(this).data('id');
+                let name=$(this).data('name');
+                let price=$(this).data('price');
+                console.log(id,name,price);
+                
+                let items={
+                    item_id:id,
+                    item_name:name,
+                    item_price:price,
+                    qty:1, //for count
+                };
+
+                let itemString=localStorage.getItem('shops');
+                let itemArray;
+                if(itemString==null){
+                    itemArray=[];
+                }else{
+                    itemArray=JSON.parse(itemString);
+                }
+
+                let status=false;
+                $.each(itemArray,function(i,v){
+                    if(id==v.item_id){
+                        status=true;
+                        v.qty++;
+                    }
+                })
+                if(status==false){
+                    itemArray.push(items);
+                }
+                let itemData=JSON.stringify(itemArray);
+                localStorage.setItem('shops',itemData);
+                count();
+                getData();
+                     })
+               
+                         });
+            function total(){
+               
+                let itemString=localStorage.getItem('shops');
+                if(itemString){
+                    let itemArray=JSON.parse(itemString);
+                    if(itemArray!=0){
+                        let itemTotal=0;
+                        $.each(itemArray,function(i,v){
+                            itemTotal+=v.item_price*v.qty;
+                        
+                        })
+                        
+                        $('#total').text(itemTotal);
+                       
+                    }
+                }
+            }
+
+           
+
+            function getData(){
+                let itemString=localStorage.getItem('shops');
+                if(itemString){
+                    let data='';
+                    let j=1;
+                    let itemArray=JSON.parse(itemString);
+                    $.each(itemArray,function(i,v){
+                        data+=`<tr>
+                                    <td>${j++}</td>
+                                    <td>${v.item_name}</td>
+                                    <td>${v.item_price}</td>
+                                    <td><button class="btn btn-danger px-2 me-2" id="sub" data-id=${i}>-</button>${v.qty}<button class="btn btn-success px-2 ms-3" id="add" data-id=${i}>+</button></td>
+                                    <td>${v.item_price*v.qty}</td>
+                                </tr>`    
+                    })
+                    $('#tbody').html(data);
+                }else{
+                    $('#tbody').html(data);
+                }
+            }
+           
+            
+            $('#dataItem').on('click','#sub',function(){
+             
+              let itemId=$(this).data('id');  
+              let itemString=localStorage.getItem('shops');
+                
+                 let itemArray;
+                 if(itemString)
+                 {
+                     itemArray=JSON.parse(itemString);
+                    $.each(itemArray,function(i,v){
+                        if(itemId==v.item_id){
+                            v.qty--;
+                            if(v.qty==0){
+                                itemArray.splice(itemId,1);
+                            }
+                        }
+                                                      
+                        })
+                        let itemData=JSON.stringify(itemArray);
+                 localStorage.setItem('shops',itemData);
+                 getData();  
+                 count();
+                   
+                          
+                 }
+                 
+                 });
+              
+                
+                
+                          
+              
+
+  
+    </script>
+</body>
+</html>
