@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyaw Clothing</title>
+    <link rel="icon" href="images/logo1.png">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome-free-6.2.1-web/css/all.min.css">
+</head>
+<body>
+<!--nav bar start-->
+<div class="sticky-top">
+    
+    <nav class=" navbar navbar-expand-md shadow navbar-light bg-light" >
+    <div class="container">
+        <a href="index.html"><img src="images/logo1.png" alt="" style="height: 100px;width: 250px;"></a>
+    <div>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Mycollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="Mycollapse">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown active">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">See a Doctor</a>
+                <ul class="dropdown-menu" id="">
+                    <li><a href="onlineDoctor.html" class="dropdown-item">See a Specialist Online</a></li>
+                    <li><a href="onlineMarket.html" class="dropdown-item">Online Medications</a></li>
+                    <li><a href="meetOurDoctor.html" class="dropdown-item">Meet Our Doctors</a></li>
+                </ul>
+            
+            </li>
+            <li class="nav-item dropdown">
+                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Book a Service</a>
+                    <ul class="dropdown-menu" id="">
+                        <li><a href="vaccinations.html" class="dropdown-item">Vaccinations</a></li>
+                        <li><a href="swapTest.html" class="dropdown-item">Covid-19 PCR Swab Test</a></li>
+                        <li><a href="homeCareService.html" class="dropdown-item">Home Care Services</a></li>
+                    </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Wellness</a>
+                    <ul class="dropdown-menu" id="">
+                        <li><a href="article.html" class="dropdown-item">Articles</a></li>
+                    </ul>
+            </li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+            <li class="nav-item"><a href="login.html" class="nav-link">Log out</a></li>
+           
+                      
+                      <li class="nav-item">
+                          <a href="checkout.html" class="btn btn-primary position-relative" id="addCart">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="count_number">
+                              </span>
+                          </a>
+                      </li> 
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      </nav>
+  </div>    
+  <!--nav bar end-->
+  <!--CheckOut-->
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="data_body">
+
+            </tbody>
+        </table>
+
+        <div class="row">
+            <div class="offset-md-4 col-md-4">
+                <div class="d-grid gap-2 mb-5">
+                    <button class="btn text-white" style="background-color: #439A97;" id="order">Order Now</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+<!--Footer Start-->
+
+<div class="header">
+    <!--Content before waves-->
+    <div class="inner-header flex">
+     <div class="container text_secondary">
+            <div class="row">
+                <div class="col-6 col-md-4 d-none d-md-block">
+                    <img src="images/logo1.png" alt="" class="img-fluid w-50" style="height:100px">
+                    <p class="">No(51),32 street, bet 72*73,<br> Yan Lone Ward, <br>Chan Aye Tharsan Township,<br> Mandalay</p>
+                </div>
+                <div class="col-6 col-md-2 ">
+                    <h4 class="text-dark">See a Doctor</h4>
+                    <a href="meetOurDoctor.html" class="nav-link py-2" >Meet our Doctors</a>
+                    <a href="onlineMarket.html" class="nav-link py-2">Online Medications</a>
+                    <a href="onlineDoctor.html" class="nav-link py-2">See a Specialist Online</a>
+                </div>
+                <div class="col-6 col-md-2 ">
+                    <h4 class="text-dark">Book A Service</h4>
+                    <a href="vaccinations.html" class="nav-link py-2" >Vaccinations</a>
+                    <a href="swapTest.html" class="nav-link py-2">Covid-19 PCR Swab Test</a>
+                    <a href="homeCareService.html" class="nav-link py-2">Home Care Services</a>
+                </div>
+                <div class="col-6 col-md-2 ">
+                    <h4 class="text-dark">Wellness</h4>
+                    <a href="article.html" class="nav-link py-2">Articles</a>
+                </div>
+                <div class="col-6 col-md-2">
+                    <p class="text-dark">Follow us on</p>
+                    <p>
+                        <i class="fa-brands fa-facebook fa-2x p-2"></i>
+                        <i class="fa-brands fa-square-instagram fa-2x p-2"></i>
+                        <i class="fa-brands fa-viber fa-2x p-2"></i>
+                    </p>
+                    <p class="py-1">
+                        <i class="fa-solid fa-phone pe-2"></i>+959964033115
+                    </p>
+                    <p class="py-1">
+                        <i class="fa-solid fa-envelope pe-2"></i>careforu@gmail.com
+                    </p>
+                </div>
+                 
+            </div>
+           
+        </div>
+    </div>
+  <!--Waves Container-->
+    <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+    </div>
+    <!--Waves end-->
+    
+    </div>
+    <!--Header ends-->
+    
+    <!--Content starts-->
+    <div class="content flex">
+      <p>Designed by Hay Mar Kyaw @2022</p>
+    </div>
+    <!--Content ends-->
+  
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="fontawesome/fontawesome-free-6.2.1-web/js/all.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/count.js"></script>
+    <script src="js/getdata.js"></script>
+    
+    <script src="js/slick.js"></script>
+   
+    
+    <script>
+        $(document).ready(function(){
+            getData();
+            count();
+            function getData(){
+                let itemStr=localStorage.getItem('medistore');
+                if(itemStr){
+                let itemArr=JSON.parse(itemStr);
+                let data='';
+                let j=1;
+                let total=0;
+                $.each(itemArr,function (i,v) {
+                    data+=`<tr>
+                    <td>${j++}</td>
+                    <td>${v.item_name}</td>
+                    <td>${v.item_price}</td>
+                    <td><button class="btn btn-outline-secondary min" data-item_i=${i}>-</button>${v.qty}<button class="btn btn-outline-secondary max" data-item_i=${i}>+</button></td>
+                    <td>${v.item_price*v.qty}</td>
+                </tr>    `
+                total+=v.item_price*v.qty;
+          });
+          
+          data+=`<td colspan="4">Total</td>
+                <td>${total}</td>`
+          $('#data_body').html(data);
+          
+    }else{
+        let data='';
+        $('#data_body').html(data);
+    }
+    count ();
+
+}
+                $('#data_body').on('click','.min',function(){
+                let item_i=$(this).data('item_i');
+                let itemStr=localStorage.getItem('medistore');
+                if(itemStr){
+                    let itemArr=JSON.parse(itemStr);
+
+                    $.each(itemArr,function(i,v){
+                        if(item_i==i){
+                            v.qty--;
+                            if(v.qty==0){
+                                itemArr.splice(item_i,1);
+                                }
+                            
+                        }
+                     
+                    });
+                    let itemData=JSON.stringify(itemArr);
+                    localStorage.setItem('medistore',itemData);
+                    getData();
+                    count();
+
+                }
+            });
+
+            $('#data_body').on('click','.max',function(){
+                let item_i=$(this).data('item_i');
+                let itemS=localStorage.getItem('medistore');
+                if(itemS){
+                    let itemA=JSON.parse(itemS);
+
+                    $.each(itemA,function(i,v){
+                        if(item_i==i){
+                            v.qty++;
+                        }
+                    });
+                    let itemD=JSON.stringify(itemA);
+                    localStorage.setItem('medistore',itemD);
+                    getData();
+                    count();
+                   
+                }
+            });
+
+            $('#order').click(function (e) { 
+                e.preventDefault();
+                localStorage.clear();
+                getData();
+                count();
+                
+            });
+         
+
+        });
+    </script>
+</body>
+</html>
