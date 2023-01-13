@@ -2,6 +2,11 @@
 *{
   font-family: 'Sofia Sans Semi Condensed', sans-serif;
 }
+
+.logoText{
+  font-family: 'Aclonica', sans-serif;
+  font-size:large;
+}
 .text_secondary{
   color:antiquewhite;
 }
