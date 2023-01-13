@@ -2,9 +2,6 @@
 *{
   font-family: 'Sofia Sans Semi Condensed', sans-serif;
 }
-.text_secondary{
-  color:antiquewhite;
-}
 .main-nav li a{
   color:wheat ;
   display: flex;
@@ -709,8 +706,8 @@
         font-size: 5vw;
         width: 100%;
         z-index: 2;
+      
       }
-       
       
         .title .title-inner {
           display: inline-block;
@@ -785,7 +782,7 @@
           }
         }
       }
-        .image img {
+       .image img {
 
           display: block;
           width: 100%;

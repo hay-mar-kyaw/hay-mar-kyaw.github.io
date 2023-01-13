@@ -33,10 +33,10 @@
                 </div>
                 <div class="collapse navbar-collapse" id="Mycollapse">
                 <ul class="navbar-nav ms-auto main-nav">
-                    <li class="nav-item"><a href="#" class="mx-2 nav-link text-decoration-none d-block" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">LOGIN</a></li>
-                    <li class="nav-item"><a href="#" class="mx-2 nav-link text-decoration-none d-block" data-bs-toggle="modal" data-bs-target="#singUp" data-bs-whatever="@getbootstrap">SINGUP</a></li>
+                    <li class="nav-item"><a href="#" class="mx-2 nav-link text-decoration-none d-block" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;LOGIN</a></li>
+                    <li class="nav-item"><a href="#" class="mx-2 nav-link text-decoration-none d-block" data-bs-toggle="modal" data-bs-target="#singUp" data-bs-whatever="@getbootstrap"><i class="fa-solid fa-user-plus"></i>&nbsp;&nbsp;SINGUP</a></li>
                 </ul>
-                    <a href="" class="mx-2 btn btn-light bookbtn" style="color: #C58940;" >BOOK NOW</a>
+                    <a href="booking.html" class="mx-2 btn btn-light bookbtn" style="color: #C58940;" >BOOK NOW</a>
                 </div>    
             </div>
         </nav>
@@ -47,32 +47,37 @@
                     <li class="nav-item active"><a href="index.html" class="nav-link" style="color: #FAF8F1;">Home</a></li>
                     <li class="nav-item"><a href="room.html" class="nav-link" style="color: #FAF8F1;">Room</a></li>
                     <li class="nav-item"><a href="service.html" class="nav-link" style="color: #FAF8F1;">Service</a></li>
-                    <li class="nav-item"><a href="booking.html" class="nav-link" style="color: #FAF8F1;" data-bs-toggle="modal" data-bs-target="#bookingForm" data-bs-whatever="@getbootstrap">Booking</a></li>
+                    <li class="nav-item"><a href="booking.html" class="nav-link" style="color: #FAF8F1;">Booking</a></li>
                     <li class="nav-item"><a href="blog.html" class="nav-link" style="color: #FAF8F1;">Blog</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link" style="color: #FAF8F1;">About</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link" style="color: #FAF8F1;">Contact</a></li>
                 </ul>
             </div></center>
         </nav>
-        <!--OffCanvas-->
-        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-            <div class="offcanvas-header">
-                <a href="" class="navbar-brand"><img src="image/logo.png" class="w-50" alt=""> </a>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+       <!--OffCanvas-->
+       <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header" style="background-color: #E5BA73;">
+            <a href="" class="navbar-brand"><img src="image/logo.png" class="w-50" alt=""> </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <a href="" class="text-decoration-none" style="color: #C58940;display: block;">Login&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-right-to-bracket"></i></a><br>
+                <a href="" class="text-decoration-none" style="color: #C58940;display: block;">SignUp&nbsp;&nbsp;<i class="fa-solid fa-registered"></i></a>
+                <hr>
+                <a href="index.html" class="text-decoration-none" style="color: #C58940;display: block;">Home</a><br>
+                <a href="room.html" class="text-decoration-none" style="color: #C58940;display: block;">Room</a><br>
+                <a href="service.html" class="text-decoration-none" style="color: #C58940;display: block;">Service</a><br>
+                <a href="booking.html" class="text-decoration-none" style="color: #C58940;display: block;">Booking</a><br>
+                <a href="blog.html" class="text-decoration-none" style="color: #C58940;display: block;">Blog</a><br>
+                <a href="about.html" class="text-decoration-none" style="color: #C58940;display: block;">About</a><br>
+                <a href="contact.html" class="text-decoration-none" style="color: #C58940;display: block;">Contact</a><br>
+                <hr>
+                <a href="booking.html" class="btn btn-outline-warning d-grid gap-2">Book Now</a>
             </div>
-            <div class="offcanvas-body">
-                <div>
-                    <a href="">Login</a><br>
-                    <a href="">SignUp</a>
-                    <hr>
-                    <a href="">Home</a><br>
-                    <a href="">Service</a>
-                    <hr>
-                    <a href="" class="btn btn-outline-warning">Book Now</a>
-                </div>
-            </div>
-        </div>    
-        <!--End offcanvas-->    
+        </div>
+    </div>    
+    <!--End offcanvas-->     
 <!--End Nav bar-->
 <!--start banner-->
 <div class="carousel slide carousel-fade" data-bs-ride="carosel" id="Carousel">
@@ -120,8 +125,8 @@
 <!--End Carousel-->
 <!--Services-->
 <!-- DEMO 2-->
-<div class="py-5 container">
-    <h1 class="font-weight-bold mb-0 text-center" style="color: #C58940;">Facilities</h1>
+<div class="py-3 container">
+    <h1 class="font-weight-bold mb-0 mt-0 text-center aboutTitle" style="color: #C58940;">Facilities</h1>
     <center><hr class="w-25"></center>
     <div class="row">
       <!-- DEMO 2 Item-->
@@ -181,7 +186,7 @@
 <!--End-->
 <!--Services Start-->
 <div class="container mt-5 mb-5">
-    <h1 class="font-weight-bold mb-0 text-center" style="color: #C58940;">Services</h1>
+    <h1 class="font-weight-bold mb-0 text-center aboutTitle" style="color: #C58940;">Services</h1>
     <center><hr class="w-25 mb-5"></center>
     <div class="row">
         <div class="col-12 col-md-4">
@@ -323,14 +328,14 @@
   <!--End-->
   
 <!--Footer Start-->
-<footer class="container-fluid " style="background-color: #C58940;">
+<!--<footer class="container-fluid " style="background-color: #C58940;">
     <center><a href="index.html" class=""><img src="image/logo.png" class="img-fluid mt-5 mb-5" style="width:200px; height: fit-content;"></a></center>
     <nav class=" navbar navbar-expand-md navbar-light " style="background-color: #C58940;">
         <div class="container">
             <div>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Mycollapse1">
                     <i class="moto-widget-menu-toggle-btn-icon fa fa-bars"></i>
-                <!--<span class="navbar-toggler-icon"></span>-->
+                <!--<span class="navbar-toggler-icon"></span>--
                 </button>
              </div>
              <div class="collapse navbar-collapse " id="Mycollapse1">
@@ -349,8 +354,69 @@
     </nav>
 <center><hr class="w-50 mt-5"></center>
 <p class="text-center py-3" style="color: #FAF8F1;">2023 All Rights Reserved</p>
-</footer>
+</footer>-->
+<footer class="container-fluid" style="background-color: #C58940;">
+  <div class="container mt-5 text_secondary py-5">
+      <div class="row pt-2">
+          <div class="col-12 col-md-4">
+              <h4>Hotel Thadabar</h4>
+              <p align="justify">The Hotel @ Tharabar Gate is located in the most unique Archeological Site of South East Asia, Old Bagan; the Ancient capital of the Burmese Empire.</p>
+              <p>
+                  <i class="fa-brands fa-facebook fa-2x p-2"></i>
+                  <i class="fa-brands fa-square-instagram fa-2x p-2"></i>
+                  <i class="fa-brands fa-viber fa-2x p-2"></i>
+              </p>
+          </div>
+          <div class="col-6 col-md-2 text-center">
+              <a href="index.html" class="nav-link ps-5 py-2">Home</a>
+              <a href="about.html" class="nav-link ps-5 py-2">About</a>
+              <a href="contact.html" class="nav-link ps-5 py-2">Contact</a>
+          </div>
+          <div class="col-6 col-md-2 text-center mb-2">
+              <a href="room.html" class="nav-link ps-5 py-2">Room</a>
+              <a href="service.html" class="nav-link ps-5 py-2">Service</a>
+              <a href="booking.html" class="nav-link ps-5 py-2">Booking</a>
+              <a href="blog.html" class="nav-link ps-5 py-2">Blog</a>
+          </div>
+          <div class="col-6 col-md-4">
+              <div class="row">
+                  <div class="col-2">
+                      <i class="fa-solid fa-map-location-dot fa-2x"></i>
+                  </div>
+                  <div class="col-10">
+                      Bagan-Nyaung Oo Airport Road,
 
+                      Nyaung-U ,Mandalay Region,
+                      
+                      Myanmar
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-2">
+                      <p class="py-1">
+                          <i class="fa-solid fa-phone pe-2 fa-2x"></i>
+                      </p>
+                  </div>
+                  <div class="col-10">
+                      <p class="py-3">+959964033115</p>
+                  </div>
+              </div>  
+              <div class="row">
+                  <div class="col-2">
+                      <p class="py-1"><i class="fa-solid fa-envelope pe-2 fa-2x"></i></p>
+                  </div>
+                  <div class="col-10">
+                      <p>hotelthadabar@gmail.com</p>
+                  </div>
+              </div>  
+          </div>
+              
+          </div>
+          <center><hr class="w-50 "></center>
+          <p class="text-center" style="color: #FAF8F1;">2023 All Rights Reserved</p>
+ </div>
+</div>
+</footer>
 <!--End Footer-->
 <!--End Review-->
 <script src="js/jquery.min.js"></script>

@@ -34,9 +34,9 @@
                 <div class="collapse navbar-collapse" id="Mycollapse">
                 <ul class="navbar-nav ms-auto main-nav">
                     <li class="nav-item"><a href="#" class="mx-2 nav-link text-decoration-none d-block" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;LOGIN</a></li>
-                    <li class="nav-item"><a href="#" class="mx-2 nav-link text-decoration-none d-block" data-bs-toggle="modal" data-bs-target="#singUp" data-bs-whatever="@getbootstrap"><i class="fa-solid fa-user-plus"></i>&nbsp;&nbsp;SINGUP</a></li>
+                    <li class="nav-item"><a href="#" class="mx-2 nav-link text-decoration-none d-block"><i class="fa-solid fa-registered"></i>&nbsp;&nbsp;SINGUP</a></li>
                 </ul>
-                    <a href="booking.html" class="mx-2 btn btn-light bookbtn" style="color: #C58940;" >BOOK NOW</a>
+                    <a href="" class="mx-2 btn btn-light bookbtn" style="color: #C58940;" >BOOK NOW</a>
                 </div>    
             </div>
         </nav>
@@ -63,7 +63,7 @@
             <div class="offcanvas-body">
                 <div>
                     <a href="" class="text-decoration-none" style="color: #C58940;display: block;">Login&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-right-to-bracket"></i></a><br>
-                    <a href="" class="text-decoration-none" style="color: #C58940;display: block;">SignUp&nbsp;&nbsp;<i class="fa-solid fa-user-plus"></i></a>
+                    <a href="" class="text-decoration-none" style="color: #C58940;display: block;">SignUp&nbsp;&nbsp;<i class="fa-solid fa-registered"></i></a>
                     <hr>
                     <a href="index.html" class="text-decoration-none" style="color: #C58940;display: block;">Home</a><br>
                     <a href="room.html" class="text-decoration-none" style="color: #C58940;display: block;">Room</a><br>
@@ -124,9 +124,9 @@
 </div>
 <!--End Carousel-->
 <!--About Hotel Start-->
-<div class="container  mb-5 ">
+<div class="container mt-5 mb-5 ">
     <div class="animate__fadeInDownBig">
-        <h1 class="text-center aboutTitle" style="color: #C58940;">Welcome to Hotel Thadabar</h1></div>
+        <h1 class="text-center " style="color: #C58940;">Welcome to Hotel Thadabar</h1></div>
         <center><hr class="w-25 mb-5"></center>
     <div class="row">
        <div class="card p-2 rounded shadow-lg" style="background-color: #E5BA73;">
@@ -200,7 +200,7 @@
 <div class="container main-con d-flex align-items-center justify-content-center position-relative flex-wrap mt-5 mb-5">
     <div class="card sub-card d-flex position-relative flex-column">
         <div class='imgContainer'>
-            <img src="image/delux1.jpg">
+            <a href="roomDetail.html"><img src="image/delux1.jpg"></a>
         </div>
         <div class="content text-center">
             <h4 style="color: #C58940;">Delux Double Room</h4>
@@ -259,79 +259,13 @@
                 <li>Only 5 rooms are available</li>
                 <li>Price does not include tax & services fee</li>
             </ul>
-            <a href="#" class="btn text-decoration-none ms-auto"   style="color: #C58940;float: right;">View Detail&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
-           
-             
+            <a href="#" class="text-decoration-none ms-auto " style="color: #C58940;float: right;">View Detail&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </div>
     
 </div>
 <center><a href="room.html" class="btn btn-outline-warning ps-3 d-grid gap-2 w-25 rounded-pill mb-5">View All</a></center>
 <!--Room End-->
-<!--Room Detail Modal-->
-<!--<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Delux Double Room</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!--Delux Double Room-->
-          <!--<div class="container">
-                  <section class="autoplay slider">
-                      <div class="slide">
-                          <img src="image/delux1.jpg" alt="" class=" rounded img-fluid change_image mb-3">
-                      </div>
-                      <div class="slide">
-                          <img src="image/delux2.jpg" alt="" class=" rounded img-fluid  mb-3">
-                      </div>
-                      <div class="slide">
-                          <img src="image/delux3.jpg" alt="" class=" rounded img-fluid mb-3">
-                      </div>
-                  </section>    
-                      <div class="row">
-                          <div class="col">
-                              <div class="card">
-                                  <img src="image/delux1.jpg" class="card-img-top change_image1"  alt="">
-                               </div>
-                          </div>
-                          <div class="col">
-                              <div class="card">
-                                  <img src="image/delux2.jpg" class="card-img-top  change_image1" alt="">
-                              </div>
-                          </div>
-                          <div class="col">
-                              <div class="card">
-                                  <img src="image/delux3.jpg" class="card-img-top  change_image1" alt="">
-                              </div>
-                          </div>
-                      </div>
-          </div>
-                  <div>
-                      <p>Enjoy our classic suites with all the elegancy and comfort that its interior has... It features such essentials as a flat-screen 45" TV, WiFi and 2 bathrooms with a living room and 2 bedrooms...</p>
-                      <ul>
-                          <li>Only 5 rooms are available</li>
-                          <li>Breakfast included</li>
-                          <li> Price does not include VAT & services fee</li>
-                      </ul>
-                      <h6>167000MMK/per night</h6>
-                  </div>
-              </div>
-          
-  
-          <!--End
-        
-       <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <a href="booking.html" class="text-decoration-none btn btn-light">Book Now</a>
-        </div>
-      </div>
-    </div>
-  </div>-->
-
-
 <!--Discount Start-->
 <div class="fixed-bg">
     <br><br>
@@ -473,7 +407,7 @@
 <div class="container mt-5 mb-5">
     <h1 class="text-center" style="color: #C58940;">The Best Things to Do in Bagan</h1>
     <center><hr class="w-25 mb-5"></center>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
         <div class="col py-3">
             <!-- normal -->
            <div class="ih-item square effect4">
@@ -538,42 +472,10 @@
                 </a>
             </div>
         </div>
-        <div class="col py-3">
-            <!-- colored -->
-            <div class="ih-item square colored effect4">
-                <a href="#">
-                    <div class="img">
-                        <img src="image/8things5.webp" alt="img">
-                    </div>
-                    <div class="mask1"></div>
-                    <div class="mask2"></div>
-                    <div class="info">
-                        <h3>Shop for High-Quality Lacquerware</h3>
-                        <p>Lacquerware feels like it belongs to the past </p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col py-3">
-            <!-- colored -->
-            <div class="ih-item square colored effect4">
-                <a href="#">
-                    <div class="img">
-                        <img src="image/8things6.webp" alt="img">
-                    </div>
-                    <div class="mask1"></div>
-                    <div class="mask2"></div>
-                    <div class="info">
-                        <h3>Experience Burmese Food First-Hand</h3>
-                        <p>Bagan’s food scene has become more </p>
-                    </div>
-                </a>
-            </div>
-        </div>
     </div>
-    
+    <center><a href="" class="btn btn-outline-warning ps-3 d-grid gap-2 w-25 rounded-pill">Explore More</a></center>
 </div>
-<center><a href="" class="btn btn-outline-warning ps-2 pe-2 d-grid gap-2 w-25 rounded-pill mb-5">Explore More</a></center>
+
 <!--End-->
 <!--Review Start-->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#faeab1" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,186.7C672,203,768,181,864,149.3C960,117,1056,75,1152,90.7C1248,107,1344,181,1392,218.7L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
@@ -632,75 +534,15 @@
     </div>
 </div>
 <!--End Review--> 
-<!--Login-->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header text-center" style="background-color: #E5BA73;">
-          <img src="image/logo.png" class="w-25" alt="">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body" style="background-color: #FAF8F1;">
-          <h3 class="text-center" style="color: #C58940;">Login</h3>
-              <form action="">
-                  
-                  <input type="email" name="email" id="email" class="form-control " placeholder="Username or Email"><br>
-                  
-                  <input type="password" name="password" id="password" class="form-control" placeholder="Password"><br>
-                  <a href="" class="text-decoration-none">Forgot password?</a>
-                 
-                 <br>
-                 New Customer? <a href="register.html" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#singUp" data-bs-whatever="@getbootstrap">SingUp</a><br><br>
-                 <small class="fs-6" style="font-style: italic;">(Save up to 20% on reserve)</small>
-              </form>
-          </div>
-        <div class="modal-footer" style="background-color: #E5BA73;">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-          <a href="index.html" class="text-decoration-none"><button type="button" class="btn btn-light">Login</button></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-  <!--End-->
-  <!--SingUp-->
-  <div class="modal fade" id="singUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header text-center" style="background-color: #E5BA73;">
-            <img src="image/logo.png" class="w-25" alt="">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body" style="background-color: #FAF8F1;">
-            <h3 class="text-center" style="color: #C58940;">Register</h3>
-                <form action="">
-                  <input type="text" name="name" id="name" class="form-control " placeholder="Full Name"><br>
-                  <input type="number" name="phone" id="phone" class="form-control " placeholder="Phone Number"><br>
-                    <input type="email" name="email" id="email" class="form-control " placeholder="Username or Email"><br>
-                    
-                    <input type="password" name="password" id="password" class="form-control" placeholder="Password"><br>
-                    
-                   <small class="fs-6" style="font-style: italic;">(Save up to 10% on register)</small>
-                </form>
-            </div>
-          <div class="modal-footer" style="background-color: #E5BA73;">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-            <a href="index.html" class="text-decoration-none"><button type="button" class="btn btn-light">Save</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  <!--End-->
 <!--Footer Start-->
-<!--<footer class="container-fluid mt-5" style="background-color: #C58940;">
+<footer class="container-fluid mt-5" style="background-color: #C58940;">
     <center><a href="index.html" class=""><img src="image/logo.png" class="img-fluid mt-5 mb-5" style="width:200px; height: fit-content;"></a></center>
     <nav class=" navbar navbar-expand-md navbar-light " style="background-color: #C58940;">
         <div class="container">
             <div>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Mycollapse1">
                     <i class="moto-widget-menu-toggle-btn-icon fa fa-bars"></i>
-                <!--<span class="navbar-toggler-icon"></span>
+                <!--<span class="navbar-toggler-icon"></span>-->
                 </button>
              </div>
              <div class="collapse navbar-collapse " id="Mycollapse1">
@@ -719,68 +561,6 @@
     </nav>
 <center><hr class="w-50 mt-5"></center>
 <p class="text-center py-3" style="color: #FAF8F1;">2023 All Rights Reserved</p>
-</footer>-->
-<footer class="container-fluid" style="background-color: #C58940;">
-    <div class="container mt-5 text_secondary py-5">
-        <div class="row pt-2">
-            <div class="col-12 col-md-4">
-                <h4>Hotel Thadabar</h4>
-                <p align="justify">The Hotel @ Tharabar Gate is located in the most unique Archeological Site of South East Asia, Old Bagan; the Ancient capital of the Burmese Empire.</p>
-                <p>
-                    <i class="fa-brands fa-facebook fa-2x p-2"></i>
-                    <i class="fa-brands fa-square-instagram fa-2x p-2"></i>
-                    <i class="fa-brands fa-viber fa-2x p-2"></i>
-                </p>
-            </div>
-            <div class="col-6 col-md-2 text-center">
-                <a href="index.html" class="nav-link ps-5 py-2">Home</a>
-                <a href="about.html" class="nav-link ps-5 py-2">About</a>
-                <a href="contact.html" class="nav-link ps-5 py-2">Contact</a>
-            </div>
-            <div class="col-6 col-md-2 text-center mb-2">
-                <a href="room.html" class="nav-link ps-5 py-2">Room</a>
-                <a href="service.html" class="nav-link ps-5 py-2">Service</a>
-                <a href="booking.html" class="nav-link ps-5 py-2">Booking</a>
-                <a href="blog.html" class="nav-link ps-5 py-2">Blog</a>
-            </div>
-            <div class="col-6 col-md-4">
-                <div class="row">
-                    <div class="col-2">
-                        <i class="fa-solid fa-map-location-dot fa-2x"></i>
-                    </div>
-                    <div class="col-10">
-                        Bagan-Nyaung Oo Airport Road,
-
-                        Nyaung-U ,Mandalay Region,
-                        
-                        Myanmar
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <p class="py-1">
-                            <i class="fa-solid fa-phone pe-2 fa-2x"></i>
-                        </p>
-                    </div>
-                    <div class="col-10">
-                        <p class="py-3">+959964033115</p>
-                    </div>
-                </div>  
-                <div class="row">
-                    <div class="col-2">
-                        <p class="py-1"><i class="fa-solid fa-envelope pe-2 fa-2x"></i></p>
-                    </div>
-                    <div class="col-10">
-                        <p>hotelthadabar@gmail.com</p>
-                    </div>
-                </div>  
-            </div>
-                
-            </div>
-            <center><hr class="w-50 "></center>
-            <p class="text-center" style="color: #FAF8F1;">2023 All Rights Reserved</p>
-   </div>
-</div>
 </footer>
 
 <!--End Footer-->
