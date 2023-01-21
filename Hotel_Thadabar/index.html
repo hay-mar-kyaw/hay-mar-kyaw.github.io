@@ -25,13 +25,11 @@
 <body style="background-color:#FAF8F1">
         <nav class=" navbar navbar-expand-lg shadow-lg navbar-light" style="background-color:#C58940;">
             <div class="container">
-                <div class="me-auto ">
-                <a href="index.html" class="navbar-brand"><span class="logoText text-white">Hotel</span><img src="image/logo2.png" class="img-fluid w-25" ><span class="logoText text-white">Thadabar</span>
-                </a>
-                </div>
-                <div class="ms-auto ">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                        <span class="navbar-toggler-icon"></span>
+                <div>
+                    <a href="index.html" class="navbar-brand"><span class="logoText text-white">Hotel</span><img src="image/logo2.png" class="img-fluid w-25" ><span class="logoText text-white">Thadabar</span>
+                    </a>
+                    <button class="navbar-toggler ms-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">
+                        <span class="navbar-toggler-icon "></span>
                     </button>
                 </div>
                 <div class="collapse navbar-collapse" id="Mycollapse">
@@ -88,27 +86,30 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="image/slider5.png" alt="" class="img-fluid w-100" >
-            <div class="carousel-text d-none d-md-block">
+            <div class="carousel-text d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .75;">
+                
                 <h3>Book Your Pool Session</h3>
                 <hr>
-                <p>Information:<br>We are updating our member benefits as we move through the phase of Covid-19</p>
-                <button class="btn text-white" style="background-color: #E5BA73;">Book Now</button>
+                <p>We are updating our member benefits as we move through the phase of Covid-19</p>
+                <a href="booking.html" class="text-decoration-none"><button class="btn text-white" style="background-color: #E5BA73;">Book Now</button></a>
             </div>
         </div>
         <div class="carousel-item">
             <img src="image/discount-banner.png" alt="" class="img-fluid w-100">
-            <div class="carousel-text d-none d-md-block">
+            <div class="carousel-text d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .75;">
                 <h3>LUXURY HOTEL & BEST RESORT</h3>
+                <hr>
                 <p>Experience Your Dream Vacationin Our Luxurious Hotel & Resort</p>
-                <button class="btn text-white" style="background-color: #E5BA73;">View Rooms</button>
+                <a href="room.html" class="text-decoration-none"><button class="btn text-white" style="background-color: #E5BA73;">View Rooms</button></a>
             </div>
         </div>
         <div class="carousel-item">
             <img src="image/slider2.png" alt="" class="img-fluid w-100">
-            <div class="carousel-text d-none d-md-block">
+            <div class="carousel-text d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .75;">
                 <h3>Attractive Places of Bagan</h3>
-                <p>Feel the sunset with Hotel Thadabar</p>
-                <button class="btn text-white" style="background-color: #E5BA73;">Explore More</button>
+                <hr>
+                <p>Feel the sunset with Hotel Thadabar, Attractive Places</p>
+                <a href="blog.html" class="text-decoration-none"><button class="btn text-white" style="background-color: #E5BA73;">Explore More</button></a>
             </div>
         </div>
        <button class="carousel-control-prev" data-bs-target="#Carousel" data-bs-slide="prev">
@@ -138,23 +139,16 @@
                     <form class="form-control p-3 rounded" >
                        <div class="row">
                             <div class="col-12 col-md-6 col-lg-2 py-2">
-                                <div class="input-group date" id="datepicker">
-                                    <input type="text" class="form-control" id="date" placeholder="Check-in">
-                                    <span class="input-group-append">
-                                    <span class="input-group-text bg-light d-block">
-                                        <i class="fa fa-calendar"></i>
-                                    </span>
-                                    </span>
+                                <div class="input-group date mb-3" id="datepicker">
+                                    <input type="text" class="form-control" id="date" placeholder="Check-in" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-addon1"><i class="fa fa-calendar"></i></button>
                                 </div>
+                              
                             </div> 
                             <div class="col-12 col-md-6 col-lg-2 py-2">
-                                <div class="input-group date" id="datepicker1">
-                                <input type="text" class="form-control" id="date" placeholder="Check-out">
-                                <span class="input-group-append">
-                                 <span class="input-group-text bg-light d-block">
-                                     <i class="fa fa-calendar"></i>
-                                </span>
-                                </span>
+                                <div class="input-group date mb-3" id="datepicker1">
+                                    <input type="text" class="form-control" id="date" placeholder="Check-out" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-addon1"><i class="fa fa-calendar"></i></button>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-2 py-2">
@@ -200,14 +194,16 @@
 <div class="container mt-5 mb-5">
     <h1 class="text-center" style="color: #C58940;">Pick a room that suits your taste and budget</h1>
     <center><hr class="w-25 mb-3"></center>
-</div>    
-<div class="container main-con d-flex align-items-center justify-content-center position-relative flex-wrap mt-5 mb-5">
-    <div class="card sub-card d-flex position-relative flex-column">
-        <div class='imgContainer'>
-            <img src="image/delux1.jpg">
-        </div>
-        <div class="content text-center">
-            <h4 style="color: #C58940;">Delux Double Room</h4>
+ 
+
+<div class="row">
+    <div class="col-12 col-md-6 col-lg-4 col-xxl-3 my-2">
+        <div class="card">
+            <div class="image_hover">
+                <img src="image/delux1.jpg" alt="" class="card-img-top new_image">
+            </div>
+            <div class="p-3">
+                <h4 style="color: #C58940;" class="text-center">Delux Double Room</h4>
             <center><hr class="w-50"></center>
             <p  align="justify">Enjoy our classic suites with all the elegancy and comfort </p>
             <ul class="" align="justify">
@@ -216,14 +212,18 @@
                 <li>Price does not include tax & services fee</li>
             </ul>
             <a href="#" class="text-decoration-none ms-auto " style="color: #C58940;float: right;">View Detail&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            
         </div>
+        
     </div>
-    <div class="card sub-card d-flex position-relative flex-column">
-        <div class='imgContainer'>
-            <img src="image/twin1.jpg">
-        </div>
-        <div class="content text-center">
-            <h4 style="color: #C58940;">Delux Twin Room</h4>
+    <div class="col-12 col-md-6 col-lg-4 col-xxl-3 my-2">
+        <div class="card">
+            <div class="image_hover">
+                <img src="image/twin1.jpg" alt="" class="card-img-top new_image">
+            </div>
+            <div class="p-3">
+                <h4 style="color: #C58940;" class="text-center">Delux Twin Room</h4>
             <center><hr class="w-50"></center>
             <p  align="justify">Enjoy our classic suites with all the elegancy and comfort </p>
             <ul class="" align="justify">
@@ -232,14 +232,18 @@
                 <li>Price does not include tax & services fee</li>
             </ul>
             <a href="#" class="text-decoration-none ms-auto " style="color: #C58940;float: right;">View Detail&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            
         </div>
+        
     </div>
-    <div class="card  sub-card d-flex position-relative flex-column">
-        <div class='imgContainer'>
-            <img src="image/Superior1.jpg">
-        </div>
-        <div class="content text-center">
-            <h4 style="color: #C58940;">Superior Twin Room</h4>
+    <div class="col-12 col-md-6 col-lg-4 col-xxl-3 my-2">
+        <div class="card">
+            <div class="image_hover">
+                <img src="image/Superior2.jpg" alt="" class="card-img-top new_image">
+            </div>
+            <div class="p-3">
+                <h4 style="color: #C58940;" class="text-center">Superior Room</h4>
             <center><hr class="w-50"></center>
             <p  align="justify">Enjoy our classic suites with all the elegancy and comfort </p>
             <ul class="" align="justify">
@@ -248,14 +252,18 @@
                 <li>Price does not include tax & services fee</li>
             </ul>
             <a href="#" class="text-decoration-none ms-auto " style="color: #C58940;float: right;">View Detail&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            
         </div>
+        
     </div>
-    <div class="card  sub-card d-flex position-relative flex-column">
-        <div class='imgContainer'>
-            <img src="image/family1.jpg">
-        </div>
-        <div class="content text-center">
-            <h4 style="color: #C58940;">Family Room</h4>
+    <div class="col-12 col-md-6 col-lg-4 col-xxl-3 my-2">
+        <div class="card">
+            <div class="image_hover">
+                <img src="image/family1.jpg" alt="" class="card-img-top new_image">
+            </div>
+            <div class="p-3">
+                <h4 style="color: #C58940;" class="text-center">Family Room</h4>
             <center><hr class="w-50"></center>
             <p  align="justify">Enjoy our classic suites with all the elegancy and comfort </p>
             <ul class="" align="justify">
@@ -263,13 +271,16 @@
                 <li>Only 5 rooms are available</li>
                 <li>Price does not include tax & services fee</li>
             </ul>
-            <a href="#" class="btn text-decoration-none ms-auto"   style="color: #C58940;float: right;">View Detail&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
-           
-             
+            <a href="#" class="text-decoration-none ms-auto " style="color: #C58940;float: right;">View Detail&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            
         </div>
+        
     </div>
-    
-</div>
+ 
+
+</div> 
+</div> 
 <center><a href="room.html" class="btn btn-outline-warning ps-3 d-grid gap-2 w-25 rounded-pill mb-5">View All</a></center>
 <!--Room End-->
 <!--Room Detail Modal-->
@@ -339,11 +350,13 @@
 <!--Discount Start-->
 <div class="fixed-bg">
     <br><br>
+    <div class="bg-dark bg-gradient container w-75"  style="--bs-bg-opacity: .75;">
     <h2 class="text-white text-center p-5"> Book early & save 20% on your travel</h2>
     <center><hr class="w-25 border border-warning border-4"></center>
     <h6 class="text-center text-white">Book by May 20. The offer is related to all summer reservations.<br> To get the discount mention promo code REST during the checkout.</h6>
     <center><a href="booking.html" class="btn btn-outline-warning rounded-pill ps-3 pe-3  text-white w-25">Book Now</a></center>
-    
+    <br><br>
+    </div>
 </div>       
 <!--End Discount-->
 <!--Gallery of Our Hotel Start-->
@@ -404,8 +417,8 @@
 <div class="container mb-5 mt-5 " style="background-color:#FAF8F1">
     <h1 class="text-center" style="color: #C58940;">Why People choose our Hotel & Resort</h1>
     <center><hr class="w-25 mb-5"></center>
-        <div class="row">
-            <div class="col mt-5">
+        <center><div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <div class="col mt-5 ">
                 <div class="ih-item circle effect1">
                     <a href="#">
                         <div class="spinner"></div>
@@ -437,7 +450,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col mt-5">
+           <div class="col mt-5">
                 <div class="ih-item circle effect1">
                     <a href="#">
                         <div class="spinner"></div>
@@ -469,155 +482,187 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div></center>
 </div>
 <!--End Services-->  
+
+
+
 <!--Attractions Places-->
 
 <div class="container mt-5 mb-5">
     <h1 class="text-center" style="color: #C58940;">The Best Things to Do in Bagan</h1>
     <center><hr class="w-25 mb-5"></center>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-        <div class="col py-3">
-            <!-- normal -->
-           <div class="ih-item square effect4">
-                <a href="#">
-                    <div class="img">
-                        <img src="image/8things1.webp" alt="img">
-                    </div>
-                    <div class="mask1"></div>
-                    <div class="mask2"></div>
-                    <div class="info">
-                        <h3>Fly in a Hot-Air Balloon Over Bagan</h3>
-                        <p>Bagan's temples are best viewed from a high</p>
-                    </div>
-                </a>
+    <div class="container">
+        <div class="row bootstrap snippets bootdey">
+            <div class="col-md-4 mb-3">
+                <div class="team-member">
+                    <figure class="effect-zoe">
+                        <div class="team-photo">
+                            <img src="image/8things1.webp" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-attrs">
+                            <div class="team-name font-accident-two-bold-italic">Fly in a Hot-Air Balloon Over Bagan</div>
+                            
+                        </div>
+                        <div align = "justify" class="team-content small ">
+                            Bagan's temples are best viewed from a high vantage point, and there's no higher (or more jaw-droppingly 
+                        </div>
+                        <figcaption>
+                            <a href="blog.html" class="text-decoration-none mt-4 text-white figText">View Detail</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="dividewhite4"></div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="team-member">
+                    <figure class="effect-zoe">
+                        <div class="team-photo">
+                            <img src="image/8things2.webp" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-attrs">
+                            <div class="team-name font-accident-two-bold-italic">Watch Sun Set Over Irrawaddy River</div>
+                            
+                        </div>
+                        <div align = "justify" class="team-content small">
+                            If balloon flights are beyond the reach of your budget, you can still climb on a dwindling number of multi-tiered 
+                        </div>
+                        <figcaption>
+                            <a href="blog.html" class="text-decoration-none mt-4 text-white figText">View Detail</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="dividewhite4"></div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="team-member">
+                    <figure class="effect-zoe">
+                        <div class="team-photo">
+                            <img src="image/8things3.webp" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-attrs">
+                            <div class="team-name font-accident-two-bold-italic">Explore a Local Market</div>
+                           
+                        </div>
+                        <div align = "justify" class="team-content small">
+                            You'll find two major town settlements outside the Bagan Archaeological Zone. To the Zone's west, you'll see "New 
+                        </div>
+                        <figcaption>
+                            <a href="blog.html" class="text-decoration-none mt-4 text-white figText">View Detail</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="dividewhite4"></div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="team-member">
+                    <figure class="effect-zoe">
+                        <div class="team-photo">
+                            <img src="image/8things4.webp" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-attrs">
+                            <div class="team-name font-accident-two-bold-italic">See Bagan's Temples by Bicycle</div>
+                           
+                        </div>
+                        <div align = "justify" class="team-content small">
+                            When the weather in Bagan is just right, hit the dirt trails around Bagan's temples on two wheels, and roam at your 
+                        </div>
+                        <figcaption>
+                            <a href="blog.html" class="text-decoration-none mt-4 text-white figText">View Detail</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="dividewhite4"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <figure class="effect-zoe">
+                        <div class="team-photo">
+                            <img src="image/8things7.webp" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-attrs">
+                            <div class="team-name font-accident-two-bold-italic">Attend Bagan's Biggest Festival</div>
+                            
+                        </div>
+                        <div align = "justify" class="team-content small">
+                            The biggest festival in Bagan takes place in January, on a moveable feast day that coincides 
+                        </div>
+                        <figcaption>
+                            <a href="blog.html" class="text-decoration-none mt-4 text-white figText">View Detail</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="dividewhite4"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <figure class="effect-zoe">
+                        <div class="team-photo">
+                            <img src="image/8things6.webp" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-attrs">
+                            <div class="team-name font-accident-two-bold-italic">Experience Burmese Food First-Hand</div>
+                           
+                        </div>
+                        <div align = "justify" class="team-content small">
+                            Thanks to a never-ending flow of foreign visitors, Bagan’s food scene has become more accommodating over the 
+                        </div>
+                        <figcaption>
+                            <a href="blog.html" class="text-decoration-none mt-4 text-white figText">View Detail</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="dividewhite4"></div>
             </div>
         </div>
-        <div class="col py-3">
-            <!-- colored -->
-            <div class="ih-item square colored effect4">
-                <a href="#">
-                    <div class="img">
-                        <img src="image/8things2.webp" alt="img">
-                    </div>
-                    <div class="mask1"></div>
-                    <div class="mask2"></div>
-                    <div class="info">
-                        <h3>Watch the Sun Set Over the Irrawaddy River</h3>
-                        <p>Bagan's sunsets reflecting the Irrawaddy River </p>
-                    </div>
-                </a>
-            </div>
         </div>
-        <div class="col py-3">
-            <!-- normal -->
-           <div class="ih-item square effect4">
-                <a href="#">
-                    <div class="img">
-                        <img src="image/8things3.webp" alt="img">
-                    </div>
-                    <div class="mask1"></div>
-                    <div class="mask2"></div>
-                    <div class="info">
-                        <h3>Explore a Local Market</h3>
-                        <p>You can't miss Mani Sithu Market in Nyaung-U</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col py-3">
-            <!-- colored -->
-            <div class="ih-item square colored effect4">
-                <a href="#">
-                    <div class="img">
-                        <img src="image/8things4.webp" alt="img">
-                    </div>
-                    <div class="mask1"></div>
-                    <div class="mask2"></div>
-                    <div class="info">
-                        <h3>See Bagan's Temples by Bicycle</h3>
-                        <p>Self-powered bicycles are cheap and available </p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col py-3">
-            <!-- colored -->
-            <div class="ih-item square colored effect4">
-                <a href="#">
-                    <div class="img">
-                        <img src="image/8things5.webp" alt="img">
-                    </div>
-                    <div class="mask1"></div>
-                    <div class="mask2"></div>
-                    <div class="info">
-                        <h3>Shop for High-Quality Lacquerware</h3>
-                        <p>Lacquerware feels like it belongs to the past </p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col py-3">
-            <!-- colored -->
-            <div class="ih-item square colored effect4">
-                <a href="#">
-                    <div class="img">
-                        <img src="image/8things6.webp" alt="img">
-                    </div>
-                    <div class="mask1"></div>
-                    <div class="mask2"></div>
-                    <div class="info">
-                        <h3>Experience Burmese Food First-Hand</h3>
-                        <p>Bagan’s food scene has become more </p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
     
 </div>
-<center><a href="" class="btn btn-outline-warning ps-2 pe-2 d-grid gap-2 w-25 rounded-pill mb-5">Explore More</a></center>
+<center><a href="blog.html" class="btn btn-outline-warning ps-2 pe-2 d-grid gap-2 w-25 rounded-pill mb-5">Explore More</a></center>
 <!--End-->
 <!--Review Start-->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#faeab1" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,186.7C672,203,768,181,864,149.3C960,117,1056,75,1152,90.7C1248,107,1344,181,1392,218.7L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
 </svg> 
-<div class="container-fluid  position-relative" style="background-color:#FAF8F1;height:450px;">
+<div class="container-fluid  position-relative" style="background-color:#FAF8F1;height:300px;">
     <div class="position-absolute top-50 start-50 translate-middle">
-        <h1 align="justify" class="text-center " style="color:#C58940">Reviews of our Royal Customers</h1>
+        <h2 align="justify" class="text-center " style="color:#C58940">Reviews of our Royal Customers</h2>
         <center><hr class="mb-3 w-50 "></center>
-        <div class="carousel slide text-center" data-bs-ride="carousel" id="Review-Carousel">
+        <div class="carousel carousel-dark slide text-center" data-bs-ride="carousel" id="Review-Carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active" style="height:400px;">
+                <div class="carousel-item active" style="height:300px;">
                     <div>
-                        <img src="image/user1.avif" alt="" class="rounded-pill img-fluid w-25">
+                        <center><div class="w-75 text-center"><img src="image/user1.avif" alt="" class="rounded-pill img-fluid w-25"></div></center>
                         <center><hr class="w-25 text-warning"></center>
                         <span><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i></span>
                         <center><hr class="w-25 text-warning"></center>
                         <h5 align="justify">Thanks for all of the effort made by hotel staff to create a lovely environment for our vaccation. Thanks to special diets </h5>
                     </div>
                 </div>
-                <div class="carousel-item "style="height:400px;">
+                <div class="carousel-item "style="height:300px;">
                   
-                        <img src="image/user2.avif" alt="" class="rounded-pill img-fluid w-25">
+                    <center><div class="w-75 text-center"><img src="image/user2.avif" alt="" class="rounded-pill img-fluid w-25"></div>
                         <center><hr class="w-25 text-warning"></center>
                         <span><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i></span>
                         <center><hr class="w-25 text-warning"></center>
                         <h5 align="justify">The hotel staff were extremely friendly, helpful and efficient. Real service oriented! They might consider changing the bathtub shower to standup shower for safety reasons.</h5>
                  
                 </div>
-                <div class="carousel-item "style="height:400px;">
+                <div class="carousel-item "style="height:300px;">
                     <div>
-                        <img src="image/user3.avif" alt="" class="rounded-pill img-fluid w-25">
+                        <center><div class="w-75 text-center"><img src="image/user3.avif" alt="" class="rounded-pill img-fluid w-25"></div>
                         <center><hr class="w-25 text-warning"></center>
                         <span><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i></span>
                         <center><hr class="w-25 text-warning"></center>
                          <h5 align="justify">Lovely resort style rooms and facilities. Reasonably priced. Very warm welcome. Breakfast menu a bit "tired". Easy and inexpensive access to sights of Bagan.</h5>
                     </div>
                 </div>
-                <div class="carousel-item "style="height:400px;">
+                <div class="carousel-item "style="height:300px;">
                     <div>
-                        <img src="image/user4.avif" alt="" class="rounded-pill img-fluid w-25">
+                        <center><div class="w-75 text-center"><img src="image/user4.avif" alt="" class="rounded-pill img-fluid w-25"></div>
                         <center><hr class="w-25 text-warning"></center>
                         <span><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i></span>
                         <center><hr class="w-25 text-warning"></center>
@@ -660,8 +705,8 @@
               </form>
           </div>
         <div class="modal-footer" style="background-color: #E5BA73;">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-          <a href="index.html" class="text-decoration-none"><button type="button" class="btn btn-light">Login</button></a>
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+          <a href="index.html" class="text-decoration-none"><button type="button" class="btn btn-secondary">Login</button></a>
         </div>
       </div>
     </div>
@@ -691,8 +736,8 @@
                 </form>
             </div>
           <div class="modal-footer" style="background-color: #E5BA73;">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-            <a href="index.html" class="text-decoration-none"><button type="button" class="btn btn-light">Save</button></a>
+            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+            <a href="index.html" class="text-decoration-none"><button type="button" class="btn btn-secondary">Save</button></a>
           </div>
         </div>
       </div>

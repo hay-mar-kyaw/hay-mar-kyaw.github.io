@@ -101,6 +101,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
   
   }
   .fixed-bg1 {
@@ -181,13 +182,7 @@
   }
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif
-}
+  
 
 
 .main-con .card
@@ -399,108 +394,6 @@
     font-size: 12px
 }
 
-/*Room*/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-.product{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 300px;
-  height: 400px;
-  box-shadow: 0 20px 40px rgba(0,0,0,.2);
-  border-radius: 5px;
-  background:#0e0e0f;
-  overflow: hidden
-}
-.product .imgbox{
-  height: 100%;
-  box-sizing: border-box
-}
-.product .imgbox img{
-  display: block;
-  width: 80%;
-  margin: 10px auto 0
-}
-.specifies{
-  position: absolute;
-  width: 100%;
-  bottom: -160px;
-  background: #fff;
-  padding:10px;
-  box-sizing: border-box;
-  transition: .5s
-}
-.product:hover .specifies{
-  bottom: 0;
-}
-.specifies h2{
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  width: 100%
-}
-.specifies h2 span{
-  font-size: 15px;
-  color: #ccc;
-  font-weight: normal
-}
-.specifies .price{
-  position: absolute;
-  top: 12px;
-  right: 25px;
-  font-weight: bold;
-  color: #000;
-  font-size: 30px
-}
-.lbl{
-  display: block;
-  margin-top: 5px;
-  font-weight: bold;
-  font-size: 15px
-}
-.list{
-  display: flex;
-  margin: 0;
-  padding: 0
-}
-.list li{
-  list-style: none;
-  margin: 5px 5px 0;
-  font-size: 15px;
-  font-style: normal;
-  color: #ccc
-}
-.list li:first-child{
-  margin-left: 0
-}
-.list.colors li{
-  width: 15px;height: 15px
-}
-.list.colors li:nth-child(1){
-  background: #4A148C
-}
-.list.colors li:nth-child(2){
-  background: #F50057
-}
-.list.colors li:nth-child(3){
-  background: #536DFE
-}
-.list.colors li:nth-child(4){
-  background: #388E3C
-}
-.list.colors li:nth-child(5){
-  background: #FF6D00
-}
-.read-more{
-  display: block;
-  padding: 5px;
-  color: #fff;
-  margin: 10px 0 0;
-  width:100%;
-  font-size: 13px;
-  border-radius: 2px
-}
 
 /*contact*/
 .submitbtn{
@@ -687,10 +580,7 @@
         
         z-index: 100;
       }
-        #app:hover {
-          opacity: 0.5;
-        }
-      
+           
       
       #app {
         display: grid;
@@ -882,4 +772,154 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+}
+
+/*Attractive Places */
+/* Team */
+
+.team-member {
+  background: #fff;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+.team-member .team-photo {
+  background: #fff;
+  min-height: 200px;
+  margin: 0 auto;
+  padding: 24px 24px 32px 24px;
+}
+
+.team-member .team-attrs {
+  padding: 2px 16px 16px 16px;
+  color: #303030;
+}
+
+.team-member .team-attrs .team-name {
+  font-size: 21px;
+}
+
+.team-member .team-attrs .team-position {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #a7a7a7;
+}
+
+.team-member .team-content {
+  color: #303030;
+  opacity: .8;
+  padding: 16px 24px 40px 24px;
+}
+
+.team-member:hover {
+  box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.2);
+}
+
+figcaption:hover{
+  color:#C58940
+}
+/*------------------------------------------------------------------
+[10. Hover Effects]
+*/
+
+.item-wrap {
+  margin-bottom: 30px;
+}
+
+figure {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+figure img {
+  position: relative;
+  opacity: 1.0;
+}
+
+figure figcaption {
+  padding: 1.0em;
+  color: #303030;
+  text-transform: uppercase;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure figcaption > .fig-description a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+figure figcaption:before,
+figure figcaption:after {
+  pointer-events: none;
+}
+
+figure figcaption,
+figure figcaption > a {
+  position: absolute;
+  top: 50;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* Team Hover */
+
+figure.effect-zoe {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  min-width: 200px;
+  max-height: none;
+  max-width: none;
+  float: none;
+}
+
+figure.effect-zoe img {
+  display: inline-block;
+  opacity: 1;
+}
+
+
+
+figure.effect-zoe figcaption {
+  top: auto;
+  bottom: 0;
+  padding: 0;
+  height: 5em;
+  background: #E5BA73;
+  border-top: 3px solid #fff;
+  color: #5d5d5d;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+figure.effect-zoe:hover figcaption,
+figure.effect-zoe:hover h2,
+figure.effect-zoe:hover p.icon-links a {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* room - Home Page */
+
+
+  .image_hover{
+    overflow: hidden;
+
+}
+.new_image:hover{
+    transform: scale(1.5);
+    transition-duration: 5s;
 }
